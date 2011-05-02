@@ -1,0 +1,81 @@
+<?php
+
+/**
+ * Media Manager Template of the "prsnl10" template for DokuWiki
+ *
+ * NOTE: Based on the mediamanager.php out of the "starter" template by
+ *       Anika Henke.
+ *
+ *
+ * LICENSE: This file is open source software (OSS) and may be copied under
+ *          certain conditions. See COPYING file for details or try to contact
+ *          the author(s) of this file in doubt.
+ *
+ * @license GPLv2 (http://www.gnu.org/licenses/gpl2.html)
+ * @author Andreas Haerter <development@andreas-haerter.com>
+ * @link http://andreas-haerter.com/projects/dokuwiki-template-prsnl10
+ * @link http://www.dokuwiki.org/template:prsnl10
+ * @link http://www.dokuwiki.org/devel:templates
+ * @link http://www.dokuwiki.org/devel:coding_style
+ * @link http://www.dokuwiki.org/devel:environment
+ * @link http://www.dokuwiki.org/devel:action_modes
+ */
+
+//check if we are running within the DokuWiki environment
+if (!defined("DOKU_INC")){
+    die();
+}
+
+?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo hsc($conf['lang']) ?>" lang="<?php echo hsc($conf['lang']) ?>" dir="<?php echo hsc($lang['direction']) ?>" class="popup">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title><?php echo hsc($lang['mediaselect']) ?> [<?php echo hsc(strip_tags($conf['title'])) ?>]</title>
+<?php
+//show meta-tags
+tpl_metaheaders();
+
+//include default or userdefined favicon
+//
+//note: since 2011-04-22 "Rincewind RC1", there is a core function named
+//      "tpl_getFavicon()". But its functionality is not really fitting the
+//      behaviour of this template, therefore I don't use it here exclusively.
+if (file_exists(DOKU_TPLINC."user/favicon.ico")){
+    //user defined - you might find http://tools.dynamicdrive.com/favicon/
+    //useful to generate one
+    echo "\n<link rel=\"shortcut icon\" href=\"".DOKU_TPL."user/favicon.ico\" />\n";
+} elseif (file_exists(DOKU_TPLINC."user/favicon.png")) {
+    //note: I do NOT recommend PNG for favicons (cause it is not supported by
+    //all browsers).
+    echo "\n<link rel=\"shortcut icon\" href=\"".DOKU_TPL."user/favicon.png\" />\n";
+}else{
+    //default
+    echo "\n<link rel=\"shortcut icon\" href=\"".(function_exists("tpl_getFavicon") ? tpl_getFavicon() : DOKU_TPL."images/favicon.ico")."\" />\n";
+}
+
+//load userdefined js?
+if (tpl_getConf("prsnl10_loaduserjs")){
+    echo "<script type=\"text/javascript\" charset=\"utf-8\" src=\"".DOKU_TPL."user/user.js\"></script>\n";
+}
+?>
+</head>
+
+<body>
+    <div id="media__manager" class="dokuwiki">
+        <?php html_msgarea() ?>
+        <div id="mediamgr__aside"><div class="pad">
+            <h1><?php echo hsc($lang['mediaselect'])?></h1>
+
+            <?php /* keep the id! additional elements are inserted via JS here */?>
+            <div id="media__opts"></div>
+
+            <?php tpl_mediaTree() ?>
+        </div></div>
+
+        <div id="mediamgr__content"><div class="pad">
+            <?php tpl_mediaContent() ?>
+        </div></div>
+    </div>
+</body>
+</html>

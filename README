@@ -1,0 +1,150 @@
+Title: README of the prsnl10 template for DokuWiki
+Creation date: 2010-05-26
+Last Update: 2011-05-02
+Author: Andreas Haerter <development [ät] andreas-haerter.com>
+Web: <http://andreas-haerter.com>
+     <http://andreas-haerter.com/projects/dokuwiki-template-prsnl10>
+     <http://blog.andreas-haerter.com/2011/03/16/how-to-create-a-maintainable-dokuwiki-template>
+
+
+
+PLEASE NOTE: I am NO native English speaker. If you find any errors please let
+             me know (e.g. by mail). Otherwise, my English is not getting better
+             (as desired by myself). Thank you! -- Andreas Haerter
+
+
+
+I. Using/Installing the template
+  Using "prsnl10" is simple and works just as described at
+  <http://www.dokuwiki.org/template>: extract the downloaded archive into
+  your DokuWiki's "lib/tpl/" folder. Then select the template in the Config
+  Manager by adjusting the template option. Done. :-)
+
+
+
+II. Customizing the template
+  In order to make updates of your installed "prsnl10" template easy, follow
+  these hints for customizing the template:
+
+  - Place your files in "prsnl10/user"
+    The place for *all* userdefined, custom stuff is "prsnl10/user".
+    Reason: this folder will not be touched on updates. Therefore you may delete
+    everything except "prsnl10/user" and copy all new files into "prsnl10/" to
+    update without loosing your changes. Do not forget to empty your browser's
+    cache afterwards.
+
+  - Own logo
+    If you want to replace the default text showed in the headline, simply
+    create a "logo.[png|gif|jpg]" in "prsnl10/user". The template recognizes
+    the file automatically and will use it instead of the default text.
+    Do not forget to empty your browser's cache afterwards.
+    HINT: If you want to use a text-based logo, you might find the font files
+          for "Droid Sans" useful. You can download them at
+          <http://www.google.com/webfonts/family?family=Droid+Sans>. Have a look
+          at <http://j.mp/inYDGL> if you want to know more about.
+
+  - Own favicon
+    If you want to replace the default favicon, simply create a "favicon.ico" in
+    "prsnl10/user". The template recognizes the file automatically and will use
+    it instead of the default one. Do not forget to empty your browser's cache
+    afterwards. By the way: you might find the following online tool useful:
+    <http://tools.dynamicdrive.com/favicon/>
+    Note: "favicon.png" is also possible but not recommended (cause it is not
+          supported by most MSIE versions).
+
+  - Own CSS
+    To apply additional CSS rules, edit "prsnl10/user/screen.css" (influences
+    normal layout) and/or "prsnl10/user/print.css" (influences print layout)
+    and/or "prsnl10/user/rtl.css" (influences "right-to-left" languages like
+    hebrew). These files will be included automatically (as the last ones for
+    the relevant media, therefore you are able to overrule existing styles). Do
+    not forget to empty your browser's cache afterwards.
+
+  - Own JavaScript
+    To load additional JavaScript, edit "prsnl10/user/user.js". Do not forget
+    to empty your browser's cache afterwards.
+    ATTENTION: Do not forget to activate the template option
+               "prsnl10_loaduserjs" (->"Load 'prsnl10/user/user.js'?") in the
+               DokuWiki Config Manager!
+
+  - Web analytics software (Piwik, Google Analytics etc.)
+    Tools like Piwik and Google Analytics normally provide a small code snippet
+    ("tag") which you have to include at your website to make everything work.
+    If you want to use such software with this template, have a look at
+    "prsnl10/user/tracker.php". This file exists to make it easier for you.
+    You don't have to deliberate where you have to copy and paste the code,
+    simply do it there.
+
+
+
+III. Some notes about the dirs of this template
+  * "prsnl10/conf"
+    Contains configuration files:
+    default.php:  default settings, see
+                  <http://www.dokuwiki.org/devel:configuration#default_settings>
+    metadata.php: configuration metadata, see
+                  <http://www.dokuwiki.org/devel:configuration#configuration_metadata>
+  * "prsnl10/lang"
+    Language files (subdir names = language code). You may copy the English
+    language files and translate them if your language is missing. Simply mail
+    me (Andreas Haerter) the translated files and I will include them in the
+    next release :-D.
+  * "prsnl10/css"
+    All Cascading Style Sheets (CSS). See <http://j.mp/eq8zSo> for more
+    information about how the CSS is handled.
+  * "prsnl10/imgages"
+    Images files.
+  * "prsnl10/js"
+    JavaScript files.
+  * "prsnl10/user"
+    Place for userdefined stuff. E.g. if you want use an own logo, simply copy a
+    logo.[png|gif|jpg] in here. See "II. Customizing the template" for details.
+
+
+
+IV. Other notes
+  - Even if it is not required: If you like the template, think about a small
+    donation (see <http://andreas-haerter.com/donate/prsnl10>) and/or a link to
+    <http://andreas-haerter.com/projects/dokuwiki-template-prsnl10>.
+    Thanks :-).
+
+  - This template follows the DokuWiki coding style (see
+    <http://www.dokuwiki.org/devel:coding_style>). If you want to submit any
+    patches, please respect its rules (even if you don't like it - I also don't
+    love it but this simply does not matter).
+
+  - Feel free to send patches or suggestions via mail (or look out for report
+    possibilities on <http://www.dokuwiki.org/template:prsnl10>).
+
+  - Please don't delete the "index.html" and ".htaccess" files for security
+    reasons, even if you don't know why they are there. These files should
+    prevent others from listing directory contents (a built in feature of most
+    webservers) and providing additional access protection for some files. Even
+    if everything should be secure without, I prefer some additional
+    precautions.
+
+
+
+V. About
+  "prsnl10" is a minimalist template for DokuWiki. It is designed to use
+  DokuWiki as small CMS for portfolio websites and for other "non-wiki"
+  purposes. It was created by me (Andreas Haerter), mainly for my own website at
+  <http://andreas-haerter.com>. The name means "personal template, year 2010" 
+  If you have any suggestions and/or bug reports, look out for report
+  possibilities on <http://www.dokuwiki.org/template:prsnl10>, feel free to send
+  me an email or have a look at <http://andreas-haerter.com/contact>.
+
+
+
+VI. Creation transcript
+  Some developers may find this interesting. Additionally, I am very oblivious
+  :-P.
+
+  - In principle, I followed <http://j.mp/eq8zSo>. There was just no "starter"
+    template when "prsnl10" was created. Therefore, after ~1 year, I switched
+    the CSS base from DokuWiki's default template to
+    <http://www.dokuwiki.org/template:starter> but the markup of "main.php" is
+    still based the "main.php" out of the "default" template.
+
+  - Worked worked worked.... and done! :-P
+
