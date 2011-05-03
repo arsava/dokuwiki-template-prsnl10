@@ -498,11 +498,15 @@ div.dokuwiki table.inline th:hover {
 .dokuwiki .toc span.toc_close {
     border-color: transparent;
 }
+* html .dokuwiki .toc span.toc_open,
+* html .dokuwiki .toc span.toc_close {
+    border-color: #fff; /* fix MSIE 6 */
+}
 .dokuwiki .toc span.toc_open {
-    border-top-color: __text__;
+    border-top-color: __text__ !important;
 }
 .dokuwiki .toc span.toc_close {
-    border-bottom-color: __text__;
+    border-bottom-color: __text__ !important;
 }
 .dokuwiki #toc__inside {
     background-color: transparent;
