@@ -302,6 +302,11 @@ pre,
 code {
     background-color: transparent !important;
 }
+* html pre,
+* html code {
+    width: 100%; /* fix MSIE 6 */
+}
+
 blockquote {
     border-left-color: #606060;
     padding: 0 0.75em;
