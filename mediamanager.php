@@ -31,7 +31,7 @@ if (!defined("DOKU_INC")){
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo hsc($conf['lang']) ?>" lang="<?php echo hsc($conf['lang']) ?>" dir="<?php echo hsc($lang['direction']) ?>" class="popup">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title><?php echo hsc($lang['mediaselect']) ?> [<?php echo hsc(strip_tags($conf['title'])) ?>]</title>
+<title><?php echo hsc($lang["mediaselect"]); echo " - ".hsc($conf["title"]); ?></title>
 <?php
 //show meta-tags
 tpl_metaheaders();
