@@ -379,6 +379,12 @@ blockquote {
     border-bottom: 0;
     padding-left: 18px;
 }
+.dokuwiki dl.code dt a:hover,
+.dokuwiki dl.code dt a:active,
+.dokuwiki dl.file dt a:hover,
+.dokuwiki dl.file dt a:active {
+    text-decoration: underline;
+}
 /* tables */
 th,
 td {
