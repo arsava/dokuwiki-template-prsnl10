@@ -334,7 +334,7 @@ blockquote {
  ******** Have a look at http://j.mp/eq8zSo for more information   ************
  ******************************************************************************/
 .dokuwiki {
-    font-size: 87.5% !important; /* 14px (base: 16px from browser = 100%) */
+    font-size: 0.875em !important; /* 14px (base: 16px from browser) */
     line-height: 1.8em  !important;
 }
 .dokuwiki p,
