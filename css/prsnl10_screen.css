@@ -222,7 +222,7 @@ h6, h6 a {
     /* same font stack should be used for ".dokuwiki div.tocheader" */
     font-weight: normal;
     color: __text__;
-    line-height: 140%;
+    line-height: 1.4em;
     text-align: left;
     border: none;
 }
@@ -335,7 +335,7 @@ blockquote {
  ******************************************************************************/
 .dokuwiki {
     font-size: 0.875em !important; /* 14px (base: 16px from browser) */
-    line-height: 1.8em  !important;
+    line-height: 1.8em !important;
 }
 .dokuwiki p,
 .dokuwiki ul,
