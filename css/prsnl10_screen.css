@@ -266,11 +266,6 @@ legend {
 }
 legend {
     #font-family: 'Droid Sans',Arial,Helvetica,sans-serif; /* fix MSIE 6/7 */
-} 
-
-
-p {
-    margin-bottom: 0;
 }
 
 a:link,
@@ -347,7 +342,7 @@ blockquote {
 .dokuwiki blockquote,
 .dokuwiki fieldset,
 .dokuwiki address {
-    margin: 0 0 1em; /* =25px (base 25px = 1.8em line-height) */
+    margin: 0 0 1em; /* =14px (base 25px = 1.8em line-height) */
 }
 .dokuwiki pre {
     padding: 0.5em;
