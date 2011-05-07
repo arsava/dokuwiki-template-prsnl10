@@ -530,8 +530,8 @@ div.dokuwiki table.inline th:hover {
 .dokuwiki #toc__inside a:visited {
     color: __text__;
 }
-.dokuwiki #toc__inside a:active,
-.dokuwiki #toc__inside a:hover {
+.dokuwiki #toc__inside a:hover,
+.dokuwiki #toc__inside a:active {
     border-bottom: 1px dashed __text__;
 }
 
