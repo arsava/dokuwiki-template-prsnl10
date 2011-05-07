@@ -66,9 +66,9 @@ div#pagewrap {
 
 /* header: dynamic text logo */
 #tmpl_header #tmpl_header_logo a.tmpl_header_logo_txt,
+#tmpl_header #tmpl_header_logo a.tmpl_header_logo_txt:visited,
 #tmpl_header #tmpl_header_logo a.tmpl_header_logo_txt:hover,
-#tmpl_header #tmpl_header_logo a.tmpl_header_logo_txt:active,
-#tmpl_header #tmpl_header_logo a.tmpl_header_logo_txt:visited {
+#tmpl_header #tmpl_header_logo a.tmpl_header_logo_txt:active {
     font-family: 'Droid Sans',Arial,Helvetica,sans-serif;
     font-size: 48px;   /* px instead of em to get a cross-browser reliable... */
     line-height: 59px; /* ...baseline with the header nav within tmpl_header_right */
@@ -85,11 +85,9 @@ div#pagewrap {
 #tmpl_header #tmpl_header_logo #tmpl_header_logo_img,
 #tmpl_header #tmpl_header_logo a,
 #tmpl_header #tmpl_header_logo a:link,
-#tmpl_header #tmpl_header_logo a:link:focus,
-#tmpl_header #tmpl_header_logo a:hover,
-#tmpl_header #tmpl_header_logo a:active,
 #tmpl_header #tmpl_header_logo a:visited,
-#tmpl_header #tmpl_header_logo a:visited:focus {
+#tmpl_header #tmpl_header_logo a:hover,
+#tmpl_header #tmpl_header_logo a:active {
     text-decoration: none;
     border: 0 none;
     margin: 0;
@@ -107,9 +105,7 @@ div#pagewrap {
     text-align: right;
 }
 #tmpl_header #tmpl_header_nav a,
-#tmpl_header #tmpl_header_nav a:hover,
-#tmpl_header #tmpl_header_nav a:active,
-#tmpl_header #tmpl_header_nav a:visited{
+#tmpl_header #tmpl_header_nav a:visited {
     color: __text__;
     text-transform: uppercase;
     text-decoration: none;
@@ -117,7 +113,11 @@ div#pagewrap {
     outline: 0 none;
 }
 #tmpl_header #tmpl_header_nav a:hover {
+    color: __text__;
+    text-transform: uppercase;
     text-decoration: underline;
+    border: 0 none;
+    outline: 0 none;
 }
 
 #tmpl_footer {
@@ -129,11 +129,9 @@ div#pagewrap {
     text-align: center;
     #zoom: 1; /* fix MSIE 6/7 */
 }
-
 #tmpl_footer a,
 #tmpl_footer a:link,
-#tmpl_footer a:visited,
-#tmpl_footer a:active {
+#tmpl_footer a:visited {
     color: __text_neu__;
     border-bottom: none !important;
 }
@@ -454,14 +452,14 @@ div.dokuwiki table.inline th:hover {
 .dokuwiki a.interwiki {
     border-bottom: 1px dashed __existing__;
 }
-.dokuwiki a.windows:active,
 .dokuwiki a.windows:hover,
-.dokuwiki a.mail:active,
+.dokuwiki a.windows:active,
 .dokuwiki a.mail:hover,
-.dokuwiki a.mediafile:active,
+.dokuwiki a.mail:active,
 .dokuwiki a.mediafile:hover,
-.dokuwiki a.interwiki:active,
-.dokuwiki a.interwiki:hover {
+.dokuwiki a.mediafile:active,
+.dokuwiki a.interwiki:hover,
+.dokuwiki a.interwiki:active {
     border-bottom: 0 none;
 }
 /* any link to current page */
