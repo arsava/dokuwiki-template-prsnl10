@@ -1,0 +1,7 @@
+﻿base     prsnl10
+author   Andreas Haerter
+email    development@andreas-haerter.com
+date     2011-05-08
+name     prsnl10 template
+desc     Clean and minimalist template for personal and/or portfolio websites
+url      http://andreas-haerter.com/projects/dokuwiki-template-prsnl10
