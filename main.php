@@ -94,7 +94,7 @@ if (tpl_getConf("prsnl10_loaduserjs")){
     echo "<script type=\"text/javascript\" charset=\"utf-8\" src=\"".DOKU_TPL."user/user.js\"></script>\n";
 }
 ?>
-<!--[if lt IE 7]><style type="text/css">img, div, a, input, td { behavior: url(<?php echo DOKU_TPL; ?>js/iepngfix/iepngfix.htc); }</style><![endif]-->
+<!--[if lt IE 7]><style type="text/css">img { behavior: url(<?php echo DOKU_TPL; ?>js/iepngfix/iepngfix.htc); }</style><![endif]-->
 </head>
 
 <body>
