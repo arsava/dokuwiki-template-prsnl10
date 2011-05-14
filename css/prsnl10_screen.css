@@ -298,7 +298,7 @@ pre,
 code,
 samp,
 kbd {
-    font-family: monospace, serif;
+    font-family: Consolas,monospace;
     /* same font stack should be used for ".dokuwiki table.diff td" and
        ".dokuwiki textarea.edit" */
 }
@@ -322,7 +322,7 @@ blockquote {
  ******** Have a look at http://j.mp/eq8zSo for more information   ************
  ******************************************************************************/
 .dokuwiki table.diff td {
-    font-family: monospace, serif;
+    font-family: Consolas,monospace;
     /* same font stack should be used for "pre, code, samp, kbd" and
        ".dokuwiki textarea.edit" */
     font-size: 0.857em; /* 12px (base: 14px) */
@@ -375,7 +375,7 @@ blockquote {
     line-height: 1.1em;
     font-size: 0.929em; /* =13px (base 14px) */
     font-weight: normal;
-    font-family: monospace, serif;
+    font-family: Consolas,monospace;
 }
 .dokuwiki dl.code dt a,
 .dokuwiki dl.file dt a {
@@ -627,7 +627,7 @@ html>body button.toolbutton {
 }
 .dokuwiki textarea.edit {
     line-height: 1.214em; /* 17px, base 14px (see ".dokuwiki") */
-    font-family: monospace, serif;
+    font-family: Consolas,monospace;
     /* same font stack should be used for "pre, code, samp, kbd" and
        ".dokuwiki table.diff td" */
 }
