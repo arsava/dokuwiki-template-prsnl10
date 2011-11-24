@@ -12,7 +12,7 @@
    features). These files will be included BEFORE this specific CSS file. In
    this file, I just overwrite non fitting DokuWiki "starter" CSS + add some
    CSS for some exclusive objects of this template.
-   
+
    Why I am doing this? Well, read <http://j.mp/eq8zSo>.
 */
 
@@ -72,7 +72,7 @@ div#pagewrap {
 #tmpl_header #tmpl_header_logo a.tmpl_header_logo_txt:visited,
 #tmpl_header #tmpl_header_logo a.tmpl_header_logo_txt:hover,
 #tmpl_header #tmpl_header_logo a.tmpl_header_logo_txt:active {
-    font-family: 'Droid Sans',Arial,Helvetica,sans-serif;
+    font-family: 'Droid Sans','Liberation Sans',Arial,Helvetica,sans-serif;
     font-size: 48px;   /* px instead of em to get a cross-browser reliable... */
     line-height: 59px; /* ...baseline with the header nav within tmpl_header_right */
     vertical-align: top;
@@ -101,7 +101,7 @@ div#pagewrap {
 #tmpl_header #tmpl_header_nav {
     position: absolute;
     bottom: 0;
-    font-family: 'Droid Sans',Arial,Helvetica,sans-serif;
+    font-family: 'Droid Sans','Liberation Sans',Arial,Helvetica,sans-serif;
     font-size: 112.5%; /* 18px (base: 16px) */
     margin-bottom: 8px;
     width: 100%;
@@ -216,7 +216,7 @@ html {
 }
 body {
     background: #e4e4e4 url(images/background.png) repeat-x 0 0;
-    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-family: Verdana,'Liberation Sans',Arial,Helvetica,sans-serif;
     /* same font stack should be used for ".dokuwiki div.toc" */
 }
 
@@ -226,7 +226,7 @@ h3, h3 a,
 h4, h4 a,
 h5, h5 a,
 h6, h6 a {
-    font-family: 'Droid Sans',Arial,Helvetica,sans-serif;
+    font-family: 'Droid Sans','Liberation Sans',Arial,Helvetica,sans-serif;
     /* same font stack should be used for ".dokuwiki div.tocheader" */
     font-weight: normal;
     color: __text__;
@@ -274,7 +274,7 @@ legend {
 }
 legend {
     text-align: left; /* needed for webkit browsers */
-    #font-family: 'Droid Sans',Arial,Helvetica,sans-serif; /* fix MSIE 6/7 */
+    #font-family: 'Droid Sans','Liberation Sans',Arial,Helvetica,sans-serif; /* fix MSIE 6/7 */
 }
 
 a:link,
@@ -298,7 +298,7 @@ pre,
 code,
 samp,
 kbd {
-    font-family: Consolas,monospace;
+    font-family: 'Liberation Mono',Consolas,monospace;
     /* same font stack should be used for ".dokuwiki table.diff td" and
        ".dokuwiki textarea.edit" */
 }
@@ -322,7 +322,7 @@ blockquote {
  ******** Have a look at http://j.mp/eq8zSo for more information   ************
  ******************************************************************************/
 .dokuwiki table.diff td {
-    font-family: Consolas,monospace;
+    font-family: 'Liberation Mono',Consolas,monospace;
     /* same font stack should be used for "pre, code, samp, kbd" and
        ".dokuwiki textarea.edit" */
     font-size: 0.857em; /* 12px (base: 14px) */
@@ -375,7 +375,7 @@ blockquote {
     line-height: 1.1em;
     font-size: 0.929em; /* =13px (base 14px) */
     font-weight: normal;
-    font-family: Consolas,monospace;
+    font-family: 'Liberation Mono',Consolas,monospace;
 }
 .dokuwiki dl.code dt a,
 .dokuwiki dl.file dt a {
@@ -486,13 +486,13 @@ div.dokuwiki table.inline th:hover {
  ******************************************************************************/
 .dokuwiki div.toc {
     float: left;
-    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-family: Verdana,'Liberation Sans',Arial,Helvetica,sans-serif;
     margin: 0 0 1.5em;
     padding: 0;
     width: 100%;
 }
 .dokuwiki div.tocheader {
-    font-family: 'Droid Sans',Arial,Helvetica,sans-serif;
+    font-family: 'Droid Sans','Liberation Sans',Arial,Helvetica,sans-serif;
     font-size: 1.429em; /* 20px, base 14px (see ".dokuwiki") */
     font-weight: normal;
 }
@@ -627,7 +627,7 @@ html>body button.toolbutton {
 }
 .dokuwiki textarea.edit {
     line-height: 1.214em; /* 17px, base 14px (see ".dokuwiki") */
-    font-family: Consolas,monospace;
+    font-family: 'Liberation Mono',Consolas,monospace;
     /* same font stack should be used for "pre, code, samp, kbd" and
        ".dokuwiki table.diff td" */
 }
