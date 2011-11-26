@@ -1,9 +1,7 @@
 <?php
 
 /**
- * Image Detail Template of the "prsnl10" template for DokuWiki
- *
- * Displays image details.
+ * Image detail page
  *
  * NOTE: Based on the detail.php out of the "starter" template by Anika Henke.
  *
@@ -89,30 +87,32 @@ if (tpl_getConf("prsnl10_loaduserjs")){
 
                     <dl>
                         <?php
-                            $t = tpl_img_getTag('Date.EarliestTime');
-                            if($t) print '<dt>'.$lang['img_date'].':</dt><dd>'.dformat($t).'</dd>';
+                            $config_files = getConfigFiles('mediameta');
+                            foreach ($config_files as $config_file) {
+                                if(@file_exists($config_file)) {
+                                    include($config_file);
+                                }
+                            }
 
-                            $t = tpl_img_getTag('File.Name');
-                            if($t) print '<dt>'.$lang['img_fname'].':</dt><dd>'.hsc($t).'</dd>';
-
-                            $t = tpl_img_getTag(array('Iptc.Byline','Exif.TIFFArtist','Exif.Artist','Iptc.Credit'));
-                            if($t) print '<dt>'.$lang['img_artist'].':</dt><dd>'.hsc($t).'</dd>';
-
-                            $t = tpl_img_getTag(array('Iptc.CopyrightNotice','Exif.TIFFCopyright','Exif.Copyright'));
-                            if($t) print '<dt>'.$lang['img_copyr'].':</dt><dd>'.hsc($t).'</dd>';
-
-                            $t = tpl_img_getTag('File.Format');
-                            if($t) print '<dt>'.$lang['img_format'].':</dt><dd>'.hsc($t).'</dd>';
-
-                            $t = tpl_img_getTag('File.NiceSize');
-                            if($t) print '<dt>'.$lang['img_fsize'].':</dt><dd>'.hsc($t).'</dd>';
-
-                            $t = tpl_img_getTag('Simple.Camera');
-                            if($t) print '<dt>'.$lang['img_camera'].':</dt><dd>'.hsc($t).'</dd>';
-
-                            $t = tpl_img_getTag(array('IPTC.Keywords','IPTC.Category','xmp.dc:subject'));
-                            if($t) print '<dt>'.$lang['img_keywords'].':</dt><dd>'.hsc($t).'</dd>';
-
+                            foreach($fields as $key => $tag){
+                                $t = array();
+                                if (!empty($tag[0])) {
+                                    $t = array($tag[0]);
+                                }
+                                if(is_array($tag[3])) {
+                                    $t = array_merge($t,$tag[3]);
+                                }
+                                $value = tpl_img_getTag($t);
+                                if ($value) {
+                                    echo '<dt>'.$lang[$tag[1]].':</dt><dd>';
+                                    if ($tag[2] == 'date') {
+                                        echo dformat($value);
+                                    } else {
+                                        echo hsc($value);
+                                    }
+                                    echo '</dd>';
+                                }
+                            }
                         ?>
                     </dl>
                     <?php //Comment in for Debug// dbg(tpl_img_getTag('Simple.Raw'));?>
@@ -120,7 +120,17 @@ if (tpl_getConf("prsnl10_loaduserjs")){
                 <div class="clearer"></div>
             </div><!-- /.content -->
 
-            <p class="back">&larr; <?php echo $lang['img_backto']?> <?php tpl_pagelink($ID)?></p>
+            <p class="back">
+                <?php
+                    $imgNS = getNS($IMG);
+                    $authNS = auth_quickaclcheck("$imgNS:*");
+                    if (($authNS >= AUTH_UPLOAD) && function_exists('media_managerURL')) {
+                        $mmURL = media_managerURL(array('ns' => $imgNS, 'image' => $IMG));
+                        echo '<a href="'.$mmURL.'">'.$lang['img_manager'].'</a><br />';
+                    }
+                ?>
+                &larr; <?php echo $lang['img_backto']?> <?php tpl_pagelink($ID)?>
+            </p>
 
         <?php } ?>
     </div>
