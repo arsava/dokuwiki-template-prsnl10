@@ -81,7 +81,7 @@ if (file_exists(DOKU_TPLINC."user/favicon.ico")){
     //user defined - you might find http://tools.dynamicdrive.com/favicon/
     //useful to generate one
     echo "\n<link rel=\"shortcut icon\" href=\"".DOKU_TPL."user/favicon.ico\" />\n";
-} elseif (file_exists(DOKU_TPLINC."user/favicon.png")) {
+}elseif (file_exists(DOKU_TPLINC."user/favicon.png")){
     //note: I do NOT recommend PNG for favicons (cause it is not supported by
     //all browsers).
     echo "\n<link rel=\"shortcut icon\" href=\"".DOKU_TPL."user/favicon.png\" />\n";
@@ -92,7 +92,7 @@ if (file_exists(DOKU_TPLINC."user/favicon.ico")){
 
 //include default or userdefined Apple Touch Icon (see <http://j.mp/sx3NMT> for
 //details)
-if (file_exists(DOKU_TPLINC."user/apple-touch-icon.png")) {
+if (file_exists(DOKU_TPLINC."user/apple-touch-icon.png")){
     echo "<link rel=\"apple-touch-icon\" href=\"".DOKU_TPL."user/apple-touch-icon.png\" />\n";
 }else{
     //default
@@ -111,11 +111,13 @@ if (tpl_getConf("prsnl10_loaduserjs")){
 <div id="pagewrap"<?php
     if ($ACT !== "show" && //speed up: check most common action first
         ($ACT === "admin" ||
+         $ACT === "conflict" ||
+         $ACT === "diff" ||
          $ACT === "draft" ||
          $ACT === "edit" ||
+         $ACT === "media" ||
          $ACT === "preview" ||
-         $ACT === "save" ||
-         $ACT === "conflict")){
+         $ACT === "save")){
         echo " class=\"admin\"";
     } ?>>
 
@@ -174,7 +176,7 @@ if (tpl_getConf("prsnl10_loaduserjs")){
 
     <!-- start main content area -->
     <div class="dokuwiki">
-        <?php html_msgarea()?>
+        <?php html_msgarea(); ?>
 
         <!--[if lt IE 7]>
         <noscript>Your browser has JavaScript disabled, the page layout will be broken.
@@ -214,7 +216,17 @@ tpl_content(false);
 
         <div id="tmpl_footer">
             <div id="tmpl_footer_actlinksleft">
-                [&#160;<?php tpl_actionlink("top"); echo "&#160;|&#160;"; tpl_actionlink("index"); ?>&#160;]
+                <?php
+                echo "[&#160;";
+                tpl_actionlink("top");
+                if (actionOK("media")){ //check if action is disabled
+                    echo "&#160;|&#160;";
+                    tpl_actionlink("media");
+                }
+                echo "&#160;|&#160;";
+                tpl_actionlink("index");
+                echo "&#160;]";
+                ?>
             </div>
             <div id="tmpl_footer_actlinksright">
                 <?php
@@ -255,7 +267,7 @@ tpl_content(false);
             <div class="clearer"></div>
             <div id="tmpl_footer_metainfo">
                 <!-- You are NOT allowed to remove the following prsnl10 and/or DokuWiki link/notice. Please respect this! -->
-                <a href="http://andreas-haerter.com/">prsnl10</a> on <a href="http://www.dokuwiki.org/">DW</a> under the hood
+                <a href="http://andreas-haerter.com/" target=\"_blank\">prsnl10</a> on <a href="http://www.dokuwiki.org/" target=\"_blank\">DW</a> under the hood
                 <?php
                 if(!empty($INFO["exists"]) &&
                    tpl_getConf("prsnl10_showpageinfo")) {

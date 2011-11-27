@@ -321,10 +321,12 @@ button[readonly] {
     cursor: auto;
 }
 optgroup {
-    font-style: italic; font-weight: bold;
+    font-style: italic;
+    font-weight: bold;
 }
 option {
-    font-style: normal; font-weight: normal;
+    font-style: normal;
+    font-weight: normal;
 }
 
 /* general classes */
@@ -838,7 +840,7 @@ div#pagewrap.admin div#content {
 div.insitu-footnote {
     background-color: #f7f9fa;
     border: 1px solid __border__;
-    padding: 3px 7px 3px 15px;
+    padding: 3px 7px 3px 10px;
     font-size: 0.857em; /* 12px, base 14px (see ".dokuwiki") */
 }
 .dokuwiki div.footnotes {
