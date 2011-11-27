@@ -44,6 +44,7 @@ $lang["prsnl10_footer"]          = "Show additional, custom footer content?";
 $lang["prsnl10_footer_location"] = "If yes, use following wiki page as additional footer content:";
 
 //other stuff
-$lang["prsnl10_showpageinfo"] = "Show meta information about the viewed page within footer?";
-$lang["prsnl10_loaduserjs"]   = "Load 'prsnl10/user/user.js'?";
+$lang["prsnl10_showpageinfo"]           = "Show meta information about the viewed page within footer?";
+$lang["prsnl10_hideadminlinksfromanon"] = "Hide all admin and user functionality related links if the client is not an authenticated user? Please note that you have to call the login form manually if this is active (hint: '".DOKU_URL.DOKU_SCRIPT."?do=login').";
+$lang["prsnl10_loaduserjs"]             = "Load 'prsnl10/user/user.js'?";
 

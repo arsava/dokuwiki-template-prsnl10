@@ -45,6 +45,7 @@ $conf["prsnl10_footer"]          = false; //TRUE: use/show custom footer content
 $conf["prsnl10_footer_location"] = ":wiki:footer"; //page/article used to store a custom footer content
 
 //other stuff
-$conf["prsnl10_showpageinfo"] = false; //TRUE: show meta information about the current page (footer->tpl_pageinfo())
-$conf["prsnl10_loaduserjs"]   = false; //TRUE: prsnl10/user/user.js will be loaded
+$conf["prsnl10_showpageinfo"]           = false; //TRUE: show meta information about the current page (footer->tpl_pageinfo())
+$conf["prsnl10_hideadminlinksfromanon"] = false; //TRUE: hide admin links if client is not an authenticated user (including login link -> you have to call "example.com?do=login" manually)
+$conf["prsnl10_loaduserjs"]             = false; //TRUE: prsnl10/user/user.js will be loaded
 

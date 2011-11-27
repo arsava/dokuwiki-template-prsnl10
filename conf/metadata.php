@@ -45,6 +45,7 @@ $meta["prsnl10_footer"]          = array("onoff");
 $meta["prsnl10_footer_location"] = array("string");
 
 //other stuff
-$meta["prsnl10_showpageinfo"] = array("onoff");
-$meta["prsnl10_loaduserjs"]   = array("onoff");
+$meta["prsnl10_showpageinfo"]           = array("onoff");
+$meta["prsnl10_hideadminlinksfromanon"] = array("onoff");
+$meta["prsnl10_loaduserjs"]             = array("onoff");
 

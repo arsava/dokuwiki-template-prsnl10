@@ -44,6 +44,7 @@ $lang["prsnl10_footer"]          = "Zusätzlichen, eigenen Inhalt für Footer ei
 $lang["prsnl10_footer_location"] = "Falls ja, folgende wiki-Seite als zusätzlichen Footer-Inhalt verwenden:";
 
 //other stuff
-$lang["prsnl10_showpageinfo"] = "Meta-Informationen über die betrachtete Seite im Footer anzeigen?";
-$lang["prsnl10_loaduserjs"]   = "Datei 'prsnl10/user/user.js' laden?";
+$lang["prsnl10_showpageinfo"]           = "Meta-Informationen über die betrachtete Seite im Footer anzeigen?";
+$lang["prsnl10_hideadminlinksfromanon"] = "Alle Links zu Admin- und Benutzerfunktionen verstecken, falls der Client kein authentifizierter Benutzer ist? Bitte beachten: Das Login-Formular muss manuell aufgerufen werden, falls diese Option aktiviert ist (Tipp: '".DOKU_URL.DOKU_SCRIPT."?do=login').";
+$lang["prsnl10_loaduserjs"]             = "Datei 'prsnl10/user/user.js' laden?";
 
