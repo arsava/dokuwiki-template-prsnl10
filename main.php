@@ -219,12 +219,10 @@ tpl_content(false);
                 <?php
                 echo "[&#160;";
                 tpl_actionlink("top");
-                if (actionOK("media")){ //check if action is disabled
+                if (actionOK("index")){ //check if action is disabled
                     echo "&#160;|&#160;";
-                    tpl_actionlink("media");
+                    tpl_actionlink("index");
                 }
-                echo "&#160;|&#160;";
-                tpl_actionlink("index");
                 echo "&#160;]";
                 ?>
             </div>
@@ -234,9 +232,7 @@ tpl_content(false);
                 tpl_actionlink("login"); //"login" handles both login/logout
                 if (!empty($INFO["writable"])){ //$INFO comes from DokuWiki core
                     echo "&#160;|&#160;";
-                    tpl_actionlink("edit"); //"edit" also handles create/show
-                    echo  "&#160;|&#160;"
-                         ."<a href=\"".DOKU_BASE."lib/exe/mediamanager.php?ns=".getNS(getID())."\" rel=\"nofollow\">".hsc($lang["prsnl10_lnk_upload"])."</a>";
+                    tpl_actionlink("edit"); //"edit" handles edit/create/show
                 }
                 if (!empty($INFO["exists"]) &&
                     actionOK("revisions")){ //check if action is disabled
@@ -249,17 +245,22 @@ tpl_content(false);
                     echo "&#160;|&#160;";
                     tpl_actionlink("subscribe");
                 }
+                if ((!empty($INFO["writable"]) || //$INFO comes from DokuWiki core
+                     !empty($INFO["isadmin"]) || //purpose of this template are "non-wiki" websites, therefore show this link only to users with write permission and admins
+                     !empty($INFO["ismanager"])) &&
+                    actionOK("media")){ //check if action is disabled
+                    echo "&#160;|&#160;";
+                    tpl_actionlink("media");
+                }
                 if (!empty($INFO["isadmin"]) ||  //$INFO comes from DokuWiki core
                     !empty($INFO["ismanager"])){
                     echo "&#160;|&#160;";
                     tpl_actionlink("admin");
                 }
-                if (!empty($loginname)){
-                    if ($ACT !== "profile" &&
-                        actionOK("profile")){ //check if action is disabled
-                        echo "&#160;|&#160;";
-                        tpl_actionlink("profile");
-                    }
+                if (!empty($loginname) &&
+                    actionOK("profile")){ //check if action is disabled
+                    echo "&#160;|&#160;";
+                    tpl_actionlink("profile");
                 }
                 echo "&#160;]";
                 ?>
@@ -267,7 +268,7 @@ tpl_content(false);
             <div class="clearer"></div>
             <div id="tmpl_footer_metainfo">
                 <!-- You are NOT allowed to remove the following prsnl10 and/or DokuWiki link/notice. Please respect this! -->
-                <a href="http://andreas-haerter.com/" target=\"_blank\">prsnl10</a> on <a href="http://www.dokuwiki.org/" target=\"_blank\">DW</a> under the hood
+                <a href="http://andreas-haerter.com/" target="_blank">prsnl10</a> on <a href="http://www.dokuwiki.org/" target="_blank">DW</a> under the hood
                 <?php
                 if(!empty($INFO["exists"]) &&
                    tpl_getConf("prsnl10_showpageinfo")) {

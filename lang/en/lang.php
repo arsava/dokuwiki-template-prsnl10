@@ -34,7 +34,6 @@ if (!defined("DOKU_INC")){
 $lang["prsnl10_lnk_print"] = "Printable version";
 $lang["prsnl10_lnk_permrev"] = "Permanent link";
 $lang["prsnl10_lnk_whatlinkshere"] = "What links here";
-$lang["prsnl10_lnk_upload"] = "Upload file";
 $lang["prsnl10_lnk_siteindex"] = "Site index";
 
 //other
