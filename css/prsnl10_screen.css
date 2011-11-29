@@ -946,25 +946,119 @@ div.picker button.pickerbutton {
 
 
 /******************************************************************************
- ******** Adjust the starter template styles: _mediamanager.css      **********
+ ******** Adjust the starter template styles: _media_popup.css       **********
  ******** Have a look at http://j.mp/eq8zSo for more information     **********
  ******************************************************************************/
-#media__manager button {
+html.popup {
+    background-image: none;
+    background-color: #fff;
+    font-size: 14px;
+}
+html.popup body {
+    background-image: none;
+    background-color: #fff;
+}
+html.popup #media__content a.select {
+    text-decoration: none;
+    border-bottom: 0 none;
+}
+html.popup #media__content a.select:hover {
+    text-decoration: underline;
+}
+html.popup #media__manager button {
     /* nice alphatransparency background for toolbar except for IE <7 */
     background: #fff url(images/buttonshadow.png) repeat-x bottom  !important;
     border: 2px;
     border-color: #ebebeb;
     padding: 0 6px;
 }
-#media__popup {
+html.popup #media__popup {
     background-color: __background_neu__;
     width: 310px;
 }
-#media__manager h1,
-#media__manager h2,
-#media__popup h1,
-#media__popup h2 {
+html.popup #media__manager h1,
+html.popup #media__manager h2,
+html.popup #media__popup h1,
+html.popup #media__popup h2 {
     line-height: 1em;
+    margin-top: 0 !important;
+    padding-top: 2px;
+}
+html.popup html.popup #media__opts {
+    padding-left: 1em;
+    margin-bottom: 0.5em;
+}
+html.popup #media__opts input {
+    float: left;
+    display: block;
+    margin-top: 4px;
+    position: absolute;
+}
+*+html.popup #media__opts input,
+* html.popup #media__opts input {
+    position: static;
+}
+html.popup #media__opts label {
+    display: block;
+    float: left;
+    margin-left: 20px;
+    margin-bottom: 4px;
+}
+*+html.popup #media__opts label,
+* html.popup #media__opts label {
+    margin-left: 10px;
+}
+html.popup #media__opts br {
+    clear: left;
+}
+
+
+
+/******************************************************************************
+ ******** Adjust the starter template styles: _media_fullscreen.css  **********
+ ******** Have a look at http://j.mp/eq8zSo for more information     **********
+ ******************************************************************************/
+#mediamanager__page h2,
+#mediamanager__page h3 {
+    font-size: 12px !important;
+    font-family: Verdana,'Liberation Sans',Arial,Helvetica,sans-serif;
+    line-height: 1.5em !important;
+    font-weight: normal !important;
+    padding: 3px 10px !important;
+}
+#mediamanager__page div.namespaces h2 {
+    margin-bottom: 0 !important;
+    border-bottom: 0;
+}
+#mediamanager__page div.namespaces div.panelHeader {
+    font-size: 12px;
+    padding-top: 13px;
+}
+#mediamanager__page h3,
+#mediamanager__page ul.tabs li {
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 12px;
+}
+#mediamanager__page .panelHeader ul {
+    list-style-image: none !important;
+}
+#mediamanager__page .panelHeader ul .ui-buttonset {
+    font-size: 12px ;
+}
+#mediamanager__page .panelHeader ul li.ui-buttonset {
+    background-position: 3px 0;
+    padding-bottom: 3px;
+}
+/* The ".mediamanagerfix" class gets assigned in main.php for the full screen
+   media manager only. */
+.dokuwiki div#content.mediamanagerfix {
+    min-height: 0; /* the automatic resize (JS) has many problems if a parent container got a min-height */
+}
+.dokuwiki div#content.mediamanagerfix h1 {
+    line-height: 1em;
+    margin-top: -15px !important;
+    margin-bottom: 15px !important;
 }
 
 
@@ -976,6 +1070,8 @@ div.picker button.pickerbutton {
 #link__wiz {
     width: 350px;
     height: 290px;
+    line-height: 1.357em; /* 19px, base 14px (see ".dokuwiki") */
+    text-align: center;
 }
 #link__wiz_header {
     line-height: 1em;
@@ -983,6 +1079,16 @@ div.picker button.pickerbutton {
 #link__wiz_result {
     width: 343px;
     height: 233px;
+}
+#link__wiz_result a:link,
+#link__wiz_result a:link:active,
+#link__wiz_result a:visited,
+#link__wiz_result a:visited:active {
+    text-decoration: none;
+    border-bottom: 0 none;
+}
+#link__wiz_result a:hover {
+    text-decoration: underline;
 }
 
 

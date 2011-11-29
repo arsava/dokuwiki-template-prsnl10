@@ -66,7 +66,7 @@ if ($rev < 1){
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title><?php tpl_pagetitle(); echo " - ".hsc($conf["title"]); ?></title>
-<link rel="stylesheet" media="all" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Sans" />
+<link rel="stylesheet" media="all" type="text/css" href="<?php echo ((!empty($_SERVER["HTTPS"]) && $_SERVER["HTTPS"] === "on") ? "https" : "http"); ?>://fonts.googleapis.com/css?family=Droid+Sans" />
 <?php
 //show meta-tags
 tpl_metaheaders();
@@ -185,7 +185,7 @@ if (tpl_getConf("prsnl10_loaduserjs")){
         <![endif]-->
 
         <!-- start main content -->
-        <div id="content">
+        <div id="content"<?php echo (($ACT === "media") ? " class=\"mediamanagerfix\"" : ""); ?>>
             <div class="page">
             <?php
             $toc = tpl_toc(true);
