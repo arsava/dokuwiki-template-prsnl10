@@ -1050,6 +1050,10 @@ html.popup #media__opts br {
     background-position: 3px 0;
     padding-bottom: 3px;
 }
+#mediamanager__page .panelHeader div.no input.button {
+    padding: 1px;
+    line-height: 1em;
+}
 /* The ".mediamanagerfix" class gets assigned in main.php for the full screen
    media manager only. */
 .dokuwiki div#content.mediamanagerfix {
