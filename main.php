@@ -250,7 +250,8 @@ tpl_content(false);
                     if ((!empty($INFO["writable"]) || //$INFO comes from DokuWiki core
                          !empty($INFO["isadmin"]) || //purpose of this template are "non-wiki" websites, therefore show this link only to users with write permission and admins
                          !empty($INFO["ismanager"])) &&
-                        actionOK("media")){ //check if action is disabled
+                        actionOK("media") && //check if action is disabled
+                        function_exists("media_managerURL")) { //new media manager is available on DokuWiki releases newer than 2011-05-25a "Rincewind" / since 2011-11-10 "Angua" RC1
                         echo "&#160;|&#160;";
                         tpl_actionlink("media");
                     }
