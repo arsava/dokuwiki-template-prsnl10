@@ -642,7 +642,11 @@ div#pagewrap.admin div#content {
 .dokuwiki div#acl_manager div#acl__tree {
     background-color: __background_alt__;
 }
-/* admin menu: more space for plugin info */
+/* admin menu: plugin manager */
+.dokuwiki div#plugin__manager form.plugins input[type=checkbox] {
+    margin-top: 0.5em;
+}
+/* admin menu: plugin manager - more space for plugin info */
 .dokuwiki div#plugin__manager dl {
     font-size: 0.857em; /* 12px, base 14px (see ".dokuwiki") */
 }
