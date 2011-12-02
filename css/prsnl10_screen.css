@@ -83,9 +83,9 @@ h5,
 h6 {
     font-size: 1em; /* 14px, base 14px (see ".dokuwiki") */
 }
-div.dokuwiki div.page h1:first-child, /* remove top margin from headlines when there is no text above */
-div.dokuwiki div.page h2:first-child,
-div.dokuwiki div.page h3:first-child {
+.dokuwiki div.page h1:first-child, /* remove top margin from headlines when there is no text above */
+.dokuwiki div.page h2:first-child,
+.dokuwiki div.page h3:first-child {
     margin-top: 0 !important;
 }
 caption,
@@ -438,28 +438,28 @@ td[align="right"],
 th[align="right"] {
     text-align: right;
 }
-div.dokuwiki table.inline {
+.dokuwiki table.inline {
     #border: 1px solid #606060; /* fix MSIE 6/7 */
 }
-div.dokuwiki table.inline th,
-div.dokuwiki table.inline tr {
+.dokuwiki table.inline th,
+.dokuwiki table.inline tr {
     border: 1px solid #606060;
 }
-div.dokuwiki table.inline td {
+.dokuwiki table.inline td {
     border: 1px solid __text_alt__;
 }
-div.dokuwiki table.inline th {
+.dokuwiki table.inline th {
     color: inherit;
     background-color: __background_neu__;
 }
-div.dokuwiki table.inline tr {
+.dokuwiki table.inline tr {
     background-color: __background_alt__;
 }
-div.dokuwiki table.inline tr:hover th,
-div.dokuwiki table.inline th:hover {
+.dokuwiki table.inline tr:hover th,
+.dokuwiki table.inline th:hover {
     background-color: __background__;
 }
-div.dokuwiki table.inline tr:hover td {
+.dokuwiki table.inline tr:hover td {
     background-color: __background_neu__;
 }
 
@@ -859,8 +859,8 @@ div.insitu-footnote {
  ******** Have a look at http://j.mp/eq8zSo for more information     **********
  ******************************************************************************/
 /* normal buttons */
-div.dokuwiki input.button,
-div.dokuwiki button.button {
+.dokuwiki input.button,
+.dokuwiki button.button {
     background: __text__ none !important;
     border: 1px solid __text__;
     color: #fff;
@@ -870,15 +870,15 @@ div.dokuwiki button.button {
     line-height: 1.333em;
     #line-height: 1em; /* fix MSIE 6, 7 */
 }
-div.dokuwiki input.button[type=image],
-div.dokuwiki button.button[type=image] {
+.dokuwiki input.button[type=image],
+.dokuwiki button.button[type=image] {
     background: none;
     background-color: transparent !important;
     border: 0;
     padding: 0;
 }
-* html div.dokuwiki input.button,
-* html div.dokuwiki button.button {
+* html .dokuwiki input.button,
+* html .dokuwiki button.button {
     height: 28px; /* fix MSIE 6 */
 }
 
@@ -916,7 +916,7 @@ html>body button.toolbutton {
     /* same font stack should be used for "pre, code, samp, kbd" and
        ".dokuwiki table.diff td" */
 }
-* html div.dokuwiki textarea.edit {
+* html .dokuwiki textarea.edit {
     width: 100%; /* fix MSIE 6 */
 }
 div.picker {
