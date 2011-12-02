@@ -331,7 +331,7 @@ option {
 
 /* general classes */
 div.clearer {
-    /* additional to what's already in lib/styles/style.css: */
+    /* additional to what's already in DokuWiki's lib/styles/all.css: */
     font-size: 1px;
     visibility: hidden;
 }
@@ -463,7 +463,7 @@ th[align="right"] {
     background-color: __background_neu__;
 }
 
-/* embedded images (styles are already partly set in lib/styles/style.css) */
+/* embedded images (styles are already partly set in DokuWiki's lib/styles/all.css) */
 .dokuwiki img.medialeft {
     margin: .5em 1.5em .5em 0;
 }
