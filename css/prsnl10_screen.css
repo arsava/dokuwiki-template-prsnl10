@@ -474,6 +474,14 @@ th[align="right"] {
     margin: .5em auto;
 }
 
+/* messages with msg() / message are */
+div.error,
+div.info,
+div.success,
+div.notify {
+    background-position: .5em 4px;
+}
+
 
 
 /******************************************************************************
