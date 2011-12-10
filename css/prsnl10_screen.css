@@ -225,6 +225,12 @@ abbr {
     border-bottom: 1px dotted;
     font-style: normal;
 }
+em acronym,
+em abbr,
+i acronym,
+i abbr {
+    font-style: italic;
+}
 pre,
 code,
 samp,
