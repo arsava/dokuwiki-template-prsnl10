@@ -18,7 +18,7 @@
     downloaded archive into your DokuWiki's "lib/tpl/" folder. Then select the
     template in the Config Manager by adjusting the template option.
 
-    See the prsnl10 template website for instructions[2].
+    See the prsnl10 template website for update instructions[2].
 
     [1] <http://www.dokuwiki.org/template>
     [2] <http://www.dokuwiki.org/template:prsnl10#update>
@@ -59,7 +59,7 @@
       To apply additional CSS rules, edit "prsnl10/user/screen.css"
       (influences normal layout) and/or "prsnl10/user/print.css" (influences
       print layout) and/or "prsnl10/user/rtl.css" (influences "right-to-left"
-      languages like hebrew). These files will be included automatically (as the
+      languages like Hebrew). These files will be included automatically (as the
       last ones for the relevant media, therefore you are able to overrule
       existing styles). Do not forget to empty your browser's cache afterwards.
 
@@ -113,7 +113,7 @@
 
     Feel free to submit patches as GitHub pull requests (preferred) or by mail
     as well. However, please try to respect the DokuWiki coding style[3] as this
-    plugin follows its rules.
+    template follows its rules.
 
     [1] <https://github.com/bitkollektiv/dokuwiki-template-prsnl10/issues>
     [2] Andreas Haerter <ah@bitkollektiv.org>

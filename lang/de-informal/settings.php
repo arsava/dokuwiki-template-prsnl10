@@ -9,7 +9,7 @@
  * - "/lib/tpl/prsnl10/lang/<your lang>/settings.php"
  * If they are not existing, copy and translate the English ones. And don't
  * forget to mail the translation to me,
- * Andreas Haerter <development@andreas-haerter.com>. Thanks :-D.
+ * Andreas Haerter <ah@bitkollektiv.org>. Thanks :-D.
  *
  *
  * LICENSE: This file is open source software (OSS) and may be copied under
@@ -17,8 +17,7 @@
  *          the author(s) of this file in doubt.
  *
  * @license GPLv2 (http://www.gnu.org/licenses/gpl2.html)
- * @author Andreas Haerter <development@andreas-haerter.com>
- * @link http://andreas-haerter.com/projects/dokuwiki-template-prsnl10
+ * @author Andreas Haerter <ah@bitkollektiv.org>
  * @link http://www.dokuwiki.org/template:prsnl10
  * @link http://www.dokuwiki.org/config:lang
  * @link http://www.dokuwiki.org/devel:configuration

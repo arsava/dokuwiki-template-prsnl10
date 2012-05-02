@@ -16,8 +16,7 @@
  *          the author(s) of this file in doubt.
  *
  * @license GPLv2 (http://www.gnu.org/licenses/gpl2.html)
- * @author Andreas Haerter <development@andreas-haerter.com>
- * @link http://andreas-haerter.com/projects/dokuwiki-template-prsnl10
+ * @author Andreas Haerter <ah@bitkollektiv.org>
  * @link http://www.dokuwiki.org/template:prsnl10
  * @link http://www.google.com/analytics/
  * @link http://piwik.org/
