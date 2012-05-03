@@ -177,8 +177,8 @@
     In principle, I followed my own tutorial[1]. There was just no "starter"
     template[2] when "prsnl10" was created. Therefore, after ~1 year, I
     switched the CSS base from DokuWiki's default template to the starter
-    template but the markup of "main.php" is still based the "main.php" out of
-    the "default" template.
+    template, but the markup of "main.php" is still based on the default
+    template's "main.php".
 
     [1] <http://j.mp/eq8zSo>
     [2] <http://www.dokuwiki.org/template:starter>
