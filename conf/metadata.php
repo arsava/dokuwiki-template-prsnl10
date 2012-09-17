@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Types of the different option values for the "prsnl10" DokuWiki template
+ * Types of the different option values for the "prsnl12" DokuWiki template
  *
  * Notes:
  * - In general, use the admin webinterface of DokuWiki to change config.
@@ -9,7 +9,7 @@
  *   and the "default.php" in the same directory as this file.
  * - To change/translate the descriptions showed in the admin/configuration
  *   menu of DokuWiki, have a look at the file
- *   "/lib/tpl/prsnl10/lang/<your lang>/settings.php". If it does not exists,
+ *   "/lib/tpl/prsnl12/lang/<your lang>/settings.php". If it does not exists,
  *   copy and translate the English one. And don't forget to mail the
  *   translation to me, Andreas Haerter <ah@bitkollektiv.org> :-D.
  *
@@ -20,7 +20,7 @@
  *
  * @license GPLv2 (http://www.gnu.org/licenses/gpl2.html)
  * @author Andreas Haerter <ah@bitkollektiv.org>
- * @link http://www.dokuwiki.org/template:prsnl10
+ * @link http://www.dokuwiki.org/template:prsnl12
  * @link http://www.dokuwiki.org/devel:configuration
  */
 
@@ -31,20 +31,20 @@ if (!defined("DOKU_INC")){
 }
 
 //header navigation
-$meta["prsnl10_headernav"]          = array("onoff");
-$meta["prsnl10_headernav_location"] = array("string");
+$meta["prsnl12_headernav"]          = array("onoff");
+$meta["prsnl12_headernav_location"] = array("string");
 
 //custom copyright notice
-$meta["prsnl10_copyright"]          = array("onoff");
-$meta["prsnl10_copyright_default"]  = array("onoff");
-$meta["prsnl10_copyright_location"] = array("string");
+$meta["prsnl12_copyright"]          = array("onoff");
+$meta["prsnl12_copyright_default"]  = array("onoff");
+$meta["prsnl12_copyright_location"] = array("string");
 
 //custom footer content
-$meta["prsnl10_footer"]          = array("onoff");
-$meta["prsnl10_footer_location"] = array("string");
+$meta["prsnl12_footer"]          = array("onoff");
+$meta["prsnl12_footer_location"] = array("string");
 
 //other stuff
-$meta["prsnl10_showpageinfo"]           = array("onoff");
-$meta["prsnl10_hideadminlinksfromanon"] = array("onoff");
-$meta["prsnl10_loaduserjs"]             = array("onoff");
+$meta["prsnl12_showpageinfo"]           = array("onoff");
+$meta["prsnl12_hideadminlinksfromanon"] = array("onoff");
+$meta["prsnl12_loaduserjs"]             = array("onoff");
 
