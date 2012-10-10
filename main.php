@@ -66,6 +66,7 @@ if ($rev < 1){
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title><?php tpl_pagetitle(); echo " - ".hsc($conf["title"]); ?></title>
 <script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
 <link rel="stylesheet" media="all" type="text/css" href="<?php echo ((!empty($_SERVER["HTTPS"]) && $_SERVER["HTTPS"] === "on") ? "https" : "http"); ?>://fonts.googleapis.com/css?family=Droid+Sans" />
 <?php
 //show meta-tags

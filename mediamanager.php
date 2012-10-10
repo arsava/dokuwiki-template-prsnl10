@@ -32,6 +32,7 @@ if (!defined("DOKU_INC")){
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title><?php echo hsc($lang["mediaselect"]); echo " - ".hsc($conf["title"]); ?></title>
 <script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
 <?php
 //show meta-tags
 tpl_metaheaders();
