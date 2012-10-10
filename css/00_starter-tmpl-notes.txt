@@ -1,6 +1,6 @@
 I) starter template CSS version
   <https://github.com/selfthinker/dokuwiki_template_starter/zipball/master> at
-  2011-11-23 22:35
+  2012-10-10 22:05 GMT+1
 
 
 II) Modifications
