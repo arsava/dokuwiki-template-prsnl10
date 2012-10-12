@@ -784,6 +784,7 @@ div#pagewrap.admin div#content {
 
 /******************************************************************************
  ******** Adjust the starter template styles: _toc.css             ************
+ ******** Old Table of contents (TOC), until DokuWiki 2012-01-25   ************
  ******** Have a look at http://j.mp/eq8zSo for more information   ************
  ******************************************************************************/
 .dokuwiki div.toc {
@@ -792,13 +793,14 @@ div#pagewrap.admin div#content {
     margin: 0 0 1.5em;
     padding: 0;
     width: 100%;
+    clear: both;
 }
-.dokuwiki div.tocheader {
+.dokuwiki div.toc div.tocheader {
     font-family: 'Droid Sans','Liberation Sans',Arial,Helvetica,sans-serif;
     font-size: 1.429em; /* 20px, base 14px (see ".dokuwiki") */
     font-weight: normal;
 }
-.dokuwiki #toc__header {
+.dokuwiki div.toc #toc__header {
     background-color: transparent;
     border: 1px solid #606060;
     padding: 0.5em;
@@ -806,21 +808,21 @@ div#pagewrap.admin div#content {
 }
 /* see http://jonrohan.me/guide/css/creating-triangles-in-css/ for info about
    css arrows */
-.dokuwiki .toc span.toc_open,
-.dokuwiki .toc span.toc_close {
+.dokuwiki div.toc span.toc_open,
+.dokuwiki div.toc span.toc_close {
     border-color: transparent;
 }
-* html .dokuwiki .toc span.toc_open,
-* html .dokuwiki .toc span.toc_close {
+* html .dokuwiki div.toc span.toc_open,
+* html .dokuwiki div.toc span.toc_close {
     border-color: #fff; /* fix MSIE 6 */
 }
-.dokuwiki .toc span.toc_open {
+.dokuwiki div.toc span.toc_open {
     border-top-color: __text__ !important;
 }
-.dokuwiki .toc span.toc_close {
+.dokuwiki div.toc span.toc_close {
     border-bottom-color: __text__ !important;
 }
-.dokuwiki #toc__inside {
+.dokuwiki div.toc #toc__inside {
     background-color: transparent;
     border-right: 1px dotted #606060;
     border-left: 1px dotted #606060;
@@ -828,25 +830,88 @@ div#pagewrap.admin div#content {
     color: __text__;
     padding-bottom: 7px !important;
 }
-.dokuwiki #toc__inside ul,
-.dokuwiki #toc__inside ul ul {
+.dokuwiki div.toc #toc__inside ul,
+.dokuwiki div.toc #toc__inside ul ul {
     padding-left: 1.7em;
 }
-.dokuwiki #toc__inside ul li {
+.dokuwiki div.toc #toc__inside ul li {
     list-style: circle;
 }
-.dokuwiki #toc__inside a,
-.dokuwiki #toc__inside a:visited {
+.dokuwiki div.toc #toc__inside a,
+.dokuwiki div.toc #toc__inside a:visited {
     color: __text__;
 }
-.dokuwiki #toc__inside a,
-.dokuwiki #toc__inside a:visited {
+.dokuwiki div.toc #toc__inside a,
+.dokuwiki div.toc #toc__inside a:visited {
     color: __text__;
 }
-.dokuwiki #toc__inside a:hover,
-.dokuwiki #toc__inside a:active {
+.dokuwiki div.toc #toc__inside a:hover,
+.dokuwiki div.toc #toc__inside a:active {
     border-bottom: 1px dashed __text__;
 }
+
+
+
+
+/******************************************************************************
+ ******** Adjust the starter template styles: _toc.css             ************
+ ******** New Table of contents (TOC), since DokuWiki 2012-09-10   ************
+ ******** Have a look at http://j.mp/eq8zSo for more information   ************
+ ******************************************************************************/
+div.dokuwiki #dw__toc {
+    margin: 4em 0 0 2em;
+    float: right;
+    width: 200px;
+    font-family: Verdana,'Liberation Sans',Arial,Helvetica,sans-serif;
+    font-size: 90%;
+    background-color: transparent;
+}
+
+div.dokuwiki #dw__toc h3 {
+    font-family: 'Droid Sans','Liberation Sans',Arial,Helvetica,sans-serif;
+    font-size: 1em; /* 20px, base 14px (see ".dokuwiki") */
+    font-weight: bold;
+    background-color: transparent;
+    border: 1px solid #606060;
+    padding: 0.2em 0.5em;
+    margin-bottom: 0;
+}
+
+div.dokuwiki #dw__toc h3 strong {
+    margin-top: 0.2em;
+}
+
+div.dokuwiki #dw__toc h3 ~ div {
+    background-color: transparent;
+    border-right: 1px dotted #606060;
+    border-left: 1px dotted #606060;
+    border-bottom: 1px dotted #606060;
+    color: __text__;
+    padding-bottom: 7px !important;
+    padding-left: 10px;
+    padding-right: 7px;
+}
+
+.dokuwiki #dw__toc ul,
+.dokuwiki #dw__toc ul ul {
+    padding-left: 1em;
+}
+.dokuwiki #dw__toc ul li {
+    list-style: circle;
+}
+.dokuwiki #dw__toc a,
+.dokuwiki #dw__toc a:visited {
+    color: __text__;
+}
+.dokuwiki #dw__toc a,
+.dokuwiki #dw__toc a:visited {
+    color: __text__;
+}
+.dokuwiki #dw__toc a:hover,
+.dokuwiki #dw__toc a:active {
+    border-bottom: 1px dashed __text__;
+}
+
 
 
 

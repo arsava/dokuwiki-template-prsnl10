@@ -81,7 +81,7 @@ if (tpl_getConf("prsnl10_loaduserjs")){
             <h1><?php echo hsc(tpl_img_getTag('IPTC.Headline',$IMG))?></h1>
 
             <div class="content">
-                <?php tpl_img(900,700) ?>
+                <?php tpl_img(900,700); /* parameters: maximum width, maximum height (and more) */ ?>
 
                 <div class="img_detail">
                     <h2><?php print nl2br(hsc(tpl_img_getTag('simple.title'))); ?></h2>

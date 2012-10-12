@@ -192,7 +192,6 @@ if (tpl_getConf("prsnl10_loaduserjs")){
             $toc = tpl_toc(true);
             if ($toc){
                 echo $toc;
-                echo "<div class=\"clearer\"></div>\n";
              } ?>
 
 <!-- start rendered page content -->
