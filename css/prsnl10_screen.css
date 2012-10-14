@@ -51,7 +51,7 @@ h6, h6 a {
     font-weight: normal;
     color: __text__;
     background-color: inherit;
-    line-height: 1.4em;
+    line-height: 1.4em !important;
     text-align: left;
     border: none;
     padding: 0;
@@ -794,6 +794,7 @@ div#pagewrap.admin div#content {
     padding: 0;
     width: 100%;
     clear: both;
+    background-color: transparent;
 }
 .dokuwiki div.toc div.tocheader {
     font-family: 'Droid Sans','Liberation Sans',Arial,Helvetica,sans-serif;
@@ -859,7 +860,7 @@ div#pagewrap.admin div#content {
  ******** Have a look at http://j.mp/eq8zSo for more information   ************
  ******************************************************************************/
 div.dokuwiki #dw__toc {
-    margin: 4em 0 0 2em;
+    margin: 2.4em 0 0 2em;
     float: right;
     width: 200px;
     font-family: Verdana,'Liberation Sans',Arial,Helvetica,sans-serif;
@@ -941,6 +942,9 @@ div.insitu-footnote {
  ******** Adjust the starter template styles: _forms.css             **********
  ******** Have a look at http://j.mp/eq8zSo for more information     **********
  ******************************************************************************/
+.dokuwiki fieldset {
+    margin: auto;
+}
 /* normal buttons */
 .dokuwiki input.button,
 .dokuwiki button.button {
