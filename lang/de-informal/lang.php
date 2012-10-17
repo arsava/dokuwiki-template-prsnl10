@@ -38,7 +38,7 @@ $lang["prsnl10_lnk_siteindex"] = "Seitenindex";
 //other
 $lang["prsnl10_search"] = "Suche";
 $lang["prsnl10_accessdenied"] = "Zugriff verweigert";
-$lang["prsnl10_fillplaceholder"] = "Diesen Platzhalter bitte füllen";
+$lang["prsnl10_fillplaceholder"] = "Diesen Platzhalter bitte füllen oder deaktivieren";
 $lang["prsnl10_donate"] = "Spenden";
 $lang["prsnl10_templatefordw"] = "prsnl10-Template für DokuWiki";
 $lang["prsnl10_recentchanges"] = "Neuste Änderungen";
