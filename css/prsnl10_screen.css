@@ -733,11 +733,13 @@ div#pagewrap.admin div#content {
 .dokuwiki a.wikilink1,
 .dokuwiki a.wikilink1:link,
 .dokuwiki a.wikilink1:visited {
+    color: __existing__;
     border-bottom: 1px dashed __existing__;
 }
 .dokuwiki a.wikilink2,
 .dokuwiki a.wikilink2:link,
 .dokuwiki a.wikilink2:visited {
+    color: __missing__;
     border-bottom: 1px dashed __missing__;
 }
 .dokuwiki a.wikilink1:hover,
@@ -1114,12 +1116,14 @@ html.popup #media__opts br {
     padding: 3px 10px !important;
 }
 #mediamanager__page div.namespaces h2 {
+    margin-left: 0.3em !important;
     margin-bottom: 0 !important;
-    border-bottom: 0;
+    padding-top: 0.5em !important;
+    padding-bottom: 0.6em !important;
 }
 #mediamanager__page div.namespaces div.panelHeader {
     font-size: 12px;
-    padding-top: 13px;
+    padding-top: 5px;
 }
 #mediamanager__page h3,
 #mediamanager__page ul.tabs li {
