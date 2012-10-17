@@ -1,7 +1,7 @@
 ﻿base     prsnl10
 author   Andreas Haerter
 email    ah@bitkollektiv.org
-date     2012-10-14
+date     2012-10-17
 name     prsnl10 template
 desc     Clean and minimalist template for personal and/or portfolio websites.
 url      http://www.dokuwiki.org/template:prsnl10
