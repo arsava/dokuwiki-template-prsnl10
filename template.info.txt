@@ -1,6 +1,6 @@
 ﻿base     prsnl10
-author   Andreas Haerter
-email    ah@bitkollektiv.org
+author   SYN Systems
+email    dokuwiki@dev.syn-systems.com
 date     2012-10-17
 name     prsnl10 template
 desc     Clean and minimalist template for personal and/or portfolio websites.

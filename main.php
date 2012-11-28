@@ -9,7 +9,7 @@
  *          the author(s) of this file in doubt.
  *
  * @license GPLv2 (http://www.gnu.org/licenses/gpl2.html)
- * @author Andreas Haerter <ah@bitkollektiv.org>
+ * @author Andreas Haerter <ah@syn-systems.com>
  * @link http://www.dokuwiki.org/template:prsnl10
  * @link http://www.dokuwiki.org/devel:templates
  * @link http://www.dokuwiki.org/devel:coding_style
@@ -29,7 +29,7 @@ if (!defined("DOKU_INC")){
  * Stores the name the current client used to login
  *
  * @var string
- * @author Andreas Haerter <ah@bitkollektiv.org>
+ * @author Andreas Haerter <ah@syn-systems.com>
  */
 $loginname = "";
 if (!empty($conf["useacl"])){
@@ -273,7 +273,7 @@ tpl_content(false);
             <div class="clearer"></div>
             <div id="tmpl_footer_metainfo">
                 <!-- You are NOT allowed to remove the following prsnl10 and/or DokuWiki link/notice. Please respect this! -->
-                <a href="http://andreas-haerter.com/" target="_blank">prsnl10</a> on <a href="http://www.dokuwiki.org/" target="_blank">DW</a> under the hood
+                <a href="http://syn-systems.com/" target="_blank">prsnl10</a> on <a href="http://www.dokuwiki.org/" target="_blank">DW</a> under the hood
                 <?php
                 if(!empty($INFO["exists"]) &&
                    tpl_getConf("prsnl10_showpageinfo")) {
