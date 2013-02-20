@@ -272,7 +272,7 @@ tpl_content(false);
             </div>
             <div class="clearer"></div>
             <div id="tmpl_footer_metainfo">
-                <!-- You are NOT allowed to remove the following prsnl10 and/or DokuWiki link/notice. Please respect this! -->
+                <!-- Do NOT remove the following prsnl10 and/or DokuWiki link/notice. Please respect this. :-) -->
                 <a href="http://syn-systems.com/" target="_blank">prsnl10</a> on <a href="http://www.dokuwiki.org/" target="_blank">DW</a> under the hood
                 <?php
                 if(!empty($INFO["exists"]) &&
