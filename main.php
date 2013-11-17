@@ -9,7 +9,7 @@
  *          the author(s) of this file in doubt.
  *
  * @license GPLv2 (http://www.gnu.org/licenses/gpl2.html)
- * @author Andreas Haerter <ah@syn-systems.com>
+ * @author Andreas Haerter <development@andreas-haerter.com>
  * @link http://www.dokuwiki.org/template:prsnl10
  * @link http://www.dokuwiki.org/devel:templates
  * @link http://www.dokuwiki.org/devel:coding_style
@@ -29,7 +29,7 @@ if (!defined("DOKU_INC")){
  * Stores the name the current client used to login
  *
  * @var string
- * @author Andreas Haerter <ah@syn-systems.com>
+ * @author Andreas Haerter <development@andreas-haerter.com>
  */
 $loginname = "";
 if (!empty($conf["useacl"])){
@@ -272,8 +272,8 @@ tpl_content(false);
             </div>
             <div class="clearer"></div>
             <div id="tmpl_footer_metainfo">
-                <!-- Do NOT remove the following prsnl10 and/or DokuWiki link/notice. Please respect this. :-) -->
-                <a href="http://syn-systems.com/" target="_blank">prsnl10</a> on <a href="http://www.dokuwiki.org/" target="_blank">DW</a> under the hood
+                <!-- Please do NOT remove the following prsnl10 and/or DokuWiki link/notice. Thank you. :-) -->
+                <a href="http://andreas-haerter.com/" target="_blank"<?php echo ((cleanID(getID()) === "start") ? "" : " rel=\"nofollow\"") ?>>prsnl10</a> on <a href="http://www.dokuwiki.org/" target="_blank">DW</a> under the hood
                 <?php
                 if(!empty($INFO["exists"]) &&
                    tpl_getConf("prsnl10_showpageinfo")) {

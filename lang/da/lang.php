@@ -7,9 +7,11 @@
  * have a look at the following files:
  * - "/lib/tpl/prsnl10/lang/<your lang>/lang.php"
  * - "/lib/tpl/prsnl10/lang/<your lang>/settings.php"
- * If they are not existing, copy and translate the English ones. And don't
- * forget to mail the translation to us,
- * SYN Systems <dokuwiki@dev.syn-systems.com>. Thanks :-D.
+ * If they are not existing, copy and translate the English ones.
+ *
+ * Don't forget to mail your translation to
+ *   Andreas Haerter <development@andreas-haerter.com>
+ * Thanks :-D.
  *
  *
  * LICENSE: This file is open source software (OSS) and may be copied under
