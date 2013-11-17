@@ -1,0 +1,51 @@
+/******************************************************************************
+ ********************************  ATTENTION  *********************************
+         DO NOT MODIFY THIS FILE, IT WILL NOT BE PRESERVED ON UPDATES!
+ ******************************************************************************
+  If you want to add some own screen CSS, have a look at the README of this
+  template and "/user/screen.css". You have been warned!
+ *****************************************************************************/
+
+/* This file get loaded by a conditional comment. The style.ini is not used as
+   DokuWiki's internal CSS handling stumbles upon most of these Internet
+   Explorer specific browser hacks and corrections. */
+
+legend {
+    #font-family: 'Droid Sans','Liberation Sans',Arial,Helvetica,sans-serif; /* fix MSIE 6/7 */
+}
+* html pre,
+* html code {
+    width: 100%; /* fix MSIE 6 */
+}
+
+.dokuwiki table.inline {
+    #border: 1px solid #606060; /* fix MSIE 6/7 */
+}
+#tmpl_footer {
+    #zoom: 1; /* fix MSIE 6/7 */
+}
+* html .dokuwiki div.toc span.toc_open,
+* html .dokuwiki div.toc span.toc_close {
+    border-color: #fff; /* fix MSIE 6 */
+}
+
+
+.dokuwiki input.button,
+.dokuwiki button.button {
+    #line-height: 1em; /* fix MSIE 6, 7 */
+}
+* html .dokuwiki input.button,
+* html .dokuwiki button.button {
+    height: 28px; /* fix MSIE 6 */
+}
+
+
+* html .dokuwiki textarea.edit {
+    width: 100%; /* fix MSIE 6 */
+}
+
+
+/* bureaucracy plugin */
+.dokuwiki form.bureaucracy__plugin fieldset {
+    border-style: solid\9; /* fix MSIE 6/7/8 */
+}

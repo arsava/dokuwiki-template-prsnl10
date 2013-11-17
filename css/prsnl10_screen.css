@@ -100,7 +100,6 @@ legend {
 }
 legend {
     text-align: left; /* needed for webkit browsers */
-    #font-family: 'Droid Sans','Liberation Sans',Arial,Helvetica,sans-serif; /* fix MSIE 6/7 */
 }
 
 /* basic margins and paddings */
@@ -248,10 +247,6 @@ pre {
 pre,
 code {
     background-color: transparent !important;
-}
-* html pre,
-* html code {
-    width: 100%; /* fix MSIE 6 */
 }
 blockquote {
     padding: 0 0.75em;
@@ -444,9 +439,6 @@ td[align="right"],
 th[align="right"] {
     text-align: right;
 }
-.dokuwiki table.inline {
-    #border: 1px solid #606060; /* fix MSIE 6/7 */
-}
 .dokuwiki table.inline th,
 .dokuwiki table.inline tr {
     border: 1px solid #606060;
@@ -603,7 +595,6 @@ div#pagewrap {
     font-size: 0.714em; /* 10px (base: 14px) */
     color: __text_neu__;
     text-align: center;
-    #zoom: 1; /* fix MSIE 6/7 */
 }
 #tmpl_footer a,
 #tmpl_footer a:link,
@@ -815,10 +806,6 @@ div#pagewrap.admin div#content {
 .dokuwiki div.toc span.toc_close {
     border-color: transparent;
 }
-* html .dokuwiki div.toc span.toc_open,
-* html .dokuwiki div.toc span.toc_close {
-    border-color: #fff; /* fix MSIE 6 */
-}
 .dokuwiki div.toc span.toc_open {
     border-top-color: __text__ !important;
 }
@@ -957,7 +944,6 @@ div.insitu-footnote {
     font-size: 10px !important;
     padding: 5px 6px;
     line-height: 1.333em;
-    #line-height: 1em; /* fix MSIE 6, 7 */
 }
 .dokuwiki input.button[type=image],
 .dokuwiki button.button[type=image] {
@@ -965,10 +951,6 @@ div.insitu-footnote {
     background-color: transparent !important;
     border: 0;
     padding: 0;
-}
-* html .dokuwiki input.button,
-* html .dokuwiki button.button {
-    height: 28px; /* fix MSIE 6 */
 }
 
 
@@ -1004,9 +986,6 @@ html>body button.toolbutton {
     font-family: Consolas,monospace;
     /* same font stack should be used for "pre, code, samp, kbd" and
        ".dokuwiki table.diff td" */
-}
-* html .dokuwiki textarea.edit {
-    width: 100%; /* fix MSIE 6 */
 }
 div.picker {
     background-color: #ebebeb;
@@ -1194,7 +1173,6 @@ html.popup #media__opts br {
 /* bureaucracy */
 .dokuwiki form.bureaucracy__plugin fieldset {
     border: 1px dotted #606060;
-    border-style: solid\9; /* fix MSIE 6/7/8 */
 }
 .dokuwiki form.bureaucracy__plugin label span,
 .dokuwiki form.bureaucracy__plugin input.edit,

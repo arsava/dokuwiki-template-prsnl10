@@ -69,6 +69,7 @@ if (tpl_getConf("prsnl10_loaduserjs")){
     echo "<script type=\"text/javascript\" charset=\"utf-8\" src=\"".DOKU_TPL."user/user.js\"></script>\n";
 }
 ?>
+<!--[if lte IE 8]><link rel="stylesheet" media="all" type="text/css" href="<?php echo DOKU_TPL; ?>css/prsnl10_screen_iehacks.css" /><![endif]-->
 <!--[if lt IE 7]><style type="text/css">img { behavior: url(<?php echo DOKU_TPL; ?>js/iepngfix/iepngfix.htc); }</style><![endif]-->
 </head>
 

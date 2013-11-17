@@ -51,7 +51,7 @@ a.interwiki.text:after, a.interwiki:after {
 .dokuwiki a.interwiki {
     padding-left: 0 !important;
     padding-right: 0 !important;
-    background: none:
+    background: none;
 }
 #licenseinfo {
     margin-top: 10px;
