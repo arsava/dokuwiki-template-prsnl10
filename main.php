@@ -239,7 +239,7 @@ tpl_content(false);
                     !tpl_getConf("prsnl10_hideadminlinksfromanon")){
                     $tpl_actions=array();
                     if (actionOK("login")) {
-                        tpl_actionlink("login"); //"login" handles both login/logout
+		        $tpl_actions[]="login"; //"login" handles both login/logout
                     }
                     if (!empty($INFO["writable"])){ //$INFO comes from DokuWiki core
 			$tpl_actions[]="edit";
