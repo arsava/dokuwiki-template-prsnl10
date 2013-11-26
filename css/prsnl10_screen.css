@@ -489,7 +489,7 @@ div#pagewrap {
     margin: 15px auto;
     background-color: transparent;
     padding: 0 30px;
-    width: 890px; /* =width of 950px cause of 2*30px padding */
+    width: __pagewrap_width__; /* considering 2*30px padding */
 }
 
 #tmpl_header {
@@ -502,13 +502,13 @@ div#pagewrap {
 #tmpl_header #tmpl_header_left {
     position: relative;
     float: left;
-    width: 60%;
+    width: __header_left_width__;
     height: 100%;
 }
 #tmpl_header #tmpl_header_right {
     position: relative;
     float: right;
-    width: 39%; /* let 1% space for browser rounding errors */
+    width: __header_right_width__; /* let 1% space for browser rounding errors */
     height: 100%;
     line-height: 22px; /* px instead of em to get a cross-browser reliable baseline with the txt logo */
 }
@@ -524,7 +524,7 @@ div#pagewrap {
 
 .dokuwiki div#content {
     width: 100%;
-    min-height: 870px;
+    min-height: __content_min_height__;
     padding: 0;
 }
 .dokuwiki .page {
@@ -538,7 +538,7 @@ div#pagewrap {
 #tmpl_header #tmpl_header_logo a.tmpl_header_logo_txt:hover,
 #tmpl_header #tmpl_header_logo a.tmpl_header_logo_txt:active {
     font-family: 'Droid Sans','Liberation Sans',Arial,Helvetica,sans-serif;
-    font-size: 48px;   /* px instead of em to get a cross-browser reliable... */
+    font-size: __header_font_size__;
     line-height: 59px; /* ...baseline with the header nav within tmpl_header_right */
     vertical-align: top;
     font-weight: bold;
