@@ -35,6 +35,7 @@ if (!defined("DOKU_INC")){
 //header navigation
 $meta["prsnl10_headernav"]          = array("onoff");
 $meta["prsnl10_headernav_location"] = array("string");
+$meta["prsnl10_searchform"]         = array("onoff");
 
 //custom copyright notice
 $meta["prsnl10_copyright"]          = array("onoff");

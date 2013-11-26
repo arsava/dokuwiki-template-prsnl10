@@ -174,6 +174,13 @@ if (tpl_getConf("prsnl10_loaduserjs")){
     </div>
     <!-- end header -->
 
+<?php
+if (tpl_getConf("prsnl10_searchform")) {
+        echo "<div id='tmpl_searchform'>";
+        tpl_searchform();
+        echo "</div>";
+}
+?>
 
     <!-- start main content area -->
     <div class="dokuwiki">
