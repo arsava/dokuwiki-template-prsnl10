@@ -3,16 +3,24 @@
 		padding: 0 10px;
 	}
 
-	#tmpl_header_right {
+	#tmpl_header #tmpl_header_right {
 		display: none;	
 	}
 
-	#tmpl_header_left {
+	#tmpl_header #tmpl_header_left {
 		width: 100%;
+		float: none;
+		position: inherit;
+	}
+
+	#tmpl_header #tmpl_header_logo {
+		position: inherit;
 	}
 
 	#tmpl_header {
 		margin-bottom: 1em;
+		width: auto;
+		height: auto;
 	}
 
 	#tmpl_searchform {
