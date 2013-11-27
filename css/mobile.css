@@ -1,0 +1,47 @@
+@media screen and (max-width: 768px) {
+	div#pagewrap {
+		padding: 0 10px;
+	}
+
+	#tmpl_header_right {
+		display: none;	
+	}
+
+	#tmpl_header_left {
+		width: 100%;
+	}
+
+	#tmpl_header {
+		margin-bottom: 1em;
+	}
+
+	#tmpl_searchform {
+		margin:	auto;
+		margin-bottom: 1em;
+		float: none;
+		text-align: center;
+	}
+
+	.dokuwiki fieldset {
+		max-width: 400px;
+		width: inherit;
+	}
+
+	.dokuwiki img.mediacenter {
+		max-width: 100%;
+	}
+
+	div.dokuwiki #dw__toc {
+		float: none;
+		width: 90%;
+		margin: auto;
+	}
+
+	div.summary input {
+		max-width: 80%;
+	}
+
+	#tmpl_footer #tmpl_footer_actlinksleft {
+		float: none;
+	}
+}
