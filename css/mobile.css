@@ -41,7 +41,7 @@
 		max-width: 80%;
 	}
 
-	#tmpl_footer #tmpl_footer_actlinksleft {
+	#tmpl_footer_actlinksleft #tmpl_footer_actlinksright {
 		float: none;
 	}
 }
