@@ -238,7 +238,7 @@ tpl_content(false);
                 if (!empty($loginname) ||
                     !tpl_getConf("prsnl10_hideadminlinksfromanon")){
                     $tpl_actions=array();
-                    if (actionOK("login")) {
+                    if (actionOK("login") && actionOK("logout")) {
 		        $tpl_actions[]="login"; //"login" handles both login/logout
                     }
                     if (!empty($INFO["writable"])){ //$INFO comes from DokuWiki core
