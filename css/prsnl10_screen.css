@@ -489,7 +489,7 @@ div#pagewrap {
     margin: 15px auto;
     background-color: transparent;
     padding: 0 30px;
-    width: __pagewrap_width__; /* considering 2*30px padding */
+    max-width: __pagewrap_width__; /* considering 2*30px padding */
 }
 
 #tmpl_header {
@@ -1205,3 +1205,4 @@ html.popup #media__opts br {
 #qsearch__out {
     display: none;
 }
+
