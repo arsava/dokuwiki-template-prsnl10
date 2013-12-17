@@ -31,13 +31,13 @@ if (!defined("DOKU_INC")){
 }
 
 //links
-$lang["prsnl10_lnk_print"] = "인쇄용 문서";
+$lang["prsnl10_lnk_print"] = "인쇄용 판";
 $lang["prsnl10_lnk_permrev"] = "고유 링크";
 $lang["prsnl10_lnk_whatlinkshere"] = "여기를 가리키는 문서";
 $lang["prsnl10_lnk_siteindex"] = "사이트맵";
 
 //other
-$lang["prsnl10_search"] = "찾기";
+$lang["prsnl10_search"] = "검색";
 $lang["prsnl10_accessdenied"] = "접근 거부됨";
 $lang["prsnl10_fillplaceholder"] = "이 자리를 채우거나 비활성화하세요";
 $lang["prsnl10_donate"] = "기부";
