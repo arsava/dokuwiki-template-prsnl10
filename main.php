@@ -154,7 +154,7 @@ if (tpl_getConf("prsnl10_loaduserjs")){
                 if (empty($conf["useacl"]) ||
                     auth_quickaclcheck(cleanID(tpl_getConf("prsnl10_headernav_location")))){ //current user got access?
                     //get the rendered content of the defined wiki article to use as custom navigation
-                    $interim = tpl_include_page(tpl_getConf("prsnl10_headernav_location"), false);
+                    $interim = tpl_include_page(tpl_getConf("prsnl10_headernav_location"), false, true);
                     if ($interim === "" ||
                         $interim === false){
                         //show creation/edit link if the defined page got no content
