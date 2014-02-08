@@ -33,20 +33,20 @@ if (!defined("DOKU_INC")){
 }
 
 //header navigation
-$conf["prsnl10_headernav"]          = true; //TRUE: use/show header navigation
+$conf["prsnl10_headernav"]          = 1; //1: use/show header navigation
 $conf["prsnl10_headernav_location"] = ":wiki:navigation_header"; //page/article used to store the header navigation
 
 //custom copyright notice
-$conf["prsnl10_copyright"]          = true; //TRUE: use/show copyright notice
-$conf["prsnl10_copyright_default"]  = true; //TRUE: use default copyright notice (if copyright notice is enabled at all)
+$conf["prsnl10_copyright"]          = 1; //1: use/show copyright notice
+$conf["prsnl10_copyright_default"]  = 1; //1: use default copyright notice (if copyright notice is enabled at all)
 $conf["prsnl10_copyright_location"] = ":wiki:copyright"; //page/article used to store a custom copyright notice
 
 //custom footer content
-$conf["prsnl10_footer"]          = false; //TRUE: use/show custom footer content
+$conf["prsnl10_footer"]          = 0; //1: use/show custom footer content
 $conf["prsnl10_footer_location"] = ":wiki:footer"; //page/article used to store a custom footer content
 
 //other stuff
-$conf["prsnl10_showpageinfo"]           = false; //TRUE: show meta information about the current page (footer->tpl_pageinfo())
-$conf["prsnl10_hideadminlinksfromanon"] = false; //TRUE: hide admin links if client is not an authenticated user (including login link -> you have to call "example.com?do=login" manually)
-$conf["prsnl10_loaduserjs"]             = false; //TRUE: prsnl10/user/user.js will be loaded
+$conf["prsnl10_showpageinfo"]           = 0; //1: show meta information about the current page (footer->tpl_pageinfo())
+$conf["prsnl10_hideadminlinksfromanon"] = 0; //1: hide admin links if client is not an authenticated user (including login link -> you have to call "example.com?do=login" manually)
+$conf["prsnl10_loaduserjs"]             = 0; //1: prsnl10/user/user.js will be loaded
 
