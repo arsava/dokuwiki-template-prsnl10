@@ -9,12 +9,12 @@
  *          the author(s) of this file in doubt.
  *
  * @license GPLv2 (http://www.gnu.org/licenses/gpl2.html)
- * @author Andreas Haerter <development@andreas-haerter.com>
- * @link http://www.dokuwiki.org/template:prsnl10
- * @link http://www.dokuwiki.org/devel:templates
- * @link http://www.dokuwiki.org/devel:coding_style
- * @link http://www.dokuwiki.org/devel:environment
- * @link http://www.dokuwiki.org/devel:action_modes
+ * @author ARSAVA <dokuwiki@dev.arsava.com>
+ * @link https://www.dokuwiki.org/template:prsnl10
+ * @link https://www.dokuwiki.org/devel:templates
+ * @link https://www.dokuwiki.org/devel:coding_style
+ * @link https://www.dokuwiki.org/devel:environment
+ * @link https://www.dokuwiki.org/devel:action_modes
  * @link http://blog.andreas-haerter.com/2011/03/16/how-to-create-a-maintainable-dokuwiki-template
  */
 
@@ -29,7 +29,7 @@ if (!defined("DOKU_INC")){
  * Stores the name the current client used to login
  *
  * @var string
- * @author Andreas Haerter <development@andreas-haerter.com>
+ * @author ARSAVA <dokuwiki@dev.arsava.com>
  */
 $loginname = "";
 if (!empty($conf["useacl"])){
@@ -274,7 +274,7 @@ tpl_content(false);
             <div class="clearer"></div>
             <div id="tmpl_footer_metainfo">
                 <!-- Please do NOT remove the following prsnl10 and/or DokuWiki link/notice. Thank you. :-) -->
-                <a href="http://andreas-haerter.com/" target="_blank"<?php echo ((cleanID(getID()) === "start") ? "" : " rel=\"nofollow\"") ?>>prsnl10</a> on <a href="http://www.dokuwiki.org/" target="_blank">DW</a> under the hood
+                <a href="https://www.dokuwiki.org/template:prsnl10" target="_blank"<?php echo ((cleanID(getID()) === "start") ? "" : " rel=\"nofollow\"") ?>>prsnl10 on DW</a> under the hood
                 <?php
                 if(!empty($INFO["exists"]) &&
                    tpl_getConf("prsnl10_showpageinfo")) {

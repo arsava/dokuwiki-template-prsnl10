@@ -9,10 +9,10 @@
  *   the same directory as this file.
  * - To change/translate the descriptions showed in the admin/configuration
  *   menu of DokuWiki, have a look at the file
- *   "/lib/tpl/prsnl10/lang/<your lang>/settings.php". If it does not exists,
+ *   /lib/tpl/prsnl10/lang/<your lang>/settings.php. If it does not exists,
  *   copy and translate the English one. Don't forget to mail your translation
  *   to
- *     Andreas Haerter <development@andreas-haerter.com>
+ *     ARSAVA <dokuwiki@dev.arsava.com>
  *   Thanks :-D.
  *
  *
@@ -21,9 +21,9 @@
  *          the author(s) of this file in doubt.
  *
  * @license GPLv2 (http://www.gnu.org/licenses/gpl2.html)
- * @author Andreas Haerter <development@andreas-haerter.com>
- * @link http://www.dokuwiki.org/template:prsnl10
- * @link http://www.dokuwiki.org/devel:configuration
+ * @author ARSAVA <dokuwiki@dev.arsava.com>
+ * @link https://www.dokuwiki.org/template:prsnl10
+ * @link https://www.dokuwiki.org/devel:configuration
  */
 
 

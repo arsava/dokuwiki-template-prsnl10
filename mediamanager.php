@@ -12,12 +12,12 @@
  *          the author(s) of this file in doubt.
  *
  * @license GPLv2 (http://www.gnu.org/licenses/gpl2.html)
- * @author Andreas Haerter <development@andreas-haerter.com>
- * @link http://www.dokuwiki.org/template:prsnl10
- * @link http://www.dokuwiki.org/devel:templates
- * @link http://www.dokuwiki.org/devel:coding_style
- * @link http://www.dokuwiki.org/devel:environment
- * @link http://www.dokuwiki.org/devel:action_modes
+ * @author ARSAVA <dokuwiki@dev.arsava.com>
+ * @link https://www.dokuwiki.org/template:prsnl10
+ * @link https://www.dokuwiki.org/devel:templates
+ * @link https://www.dokuwiki.org/devel:coding_style
+ * @link https://www.dokuwiki.org/devel:environment
+ * @link https://www.dokuwiki.org/devel:action_modes
  */
 
 //check if we are running within the DokuWiki environment
