@@ -33,17 +33,20 @@
     these hints for customizing the template:
 
     - Place your files in "prsnl10/user"
-      The place for *all* userdefined, custom stuff is "prsnl10/user".
-      Reason: this folder will not be touched on updates. Therefore you may
-      delete everything except "prsnl10/user" and copy all new files into
-      "prsnl10/" to update without loosing your changes. Do not forget to
-      empty your browser's cache afterwards.
+      The place to store *all* user-defined, custom stuff is the "prsnl10/user"
+      directory because your files will not be touched or overwritten on
+      template updates! So you normally can copy all new files into "prsnl10/"
+      to update the template without loosing your changes.
+      Note: There are example files helping you modifying the template.
+            The are delivered with the ".dist" extensions. Just remove the
+            ".dist" extension to use them.
 
     - Own logo
-      If you want to replace the default text showed in the headline, simply
-      create a "logo.[png|gif|jpg]" in "prsnl10/user". The template recognizes
-      the file automatically and will use it instead of the default text. Do not
-      forget to empty your browser's cache afterwards.
+      If you want to replace the default logo showed in the upper left, simply
+      create a "logo.[png|gif|jpg]" in "monobook/user". The template recognizes
+      the file automatically and will use it instead of the default text.
+      Note: Do not forget to empty your browser's cache if you cannot see any
+            effect.
       Hint: If you want to use a text-based logo, you might find the font
             files [1] for "Droid Sans" out of Google's Webfont Directory [2]
             useful.
@@ -51,23 +54,29 @@
     - Own favicon
       If you want to replace the default favicon, simply create a "favicon.ico"
       in "prsnl10/user". The template recognizes the file automatically and
-      will use it instead of the default one. Do not forget to empty your
-      browser's cache afterwards. By the way: you might find the online
-      FavIcon Generator [3] useful.
+      will use it instead of the default one. You might find the online FavIcon
+      Generator [3] useful.
       Note: "favicon.png" is also possible but not recommended (because it is
             not supported by older MSIE versions).
 
     - Own CSS
-      To apply additional CSS rules, edit "prsnl10/user/screen.css"
-      (influences normal layout) and/or "prsnl10/user/print.css" (influences
-      print layout) and/or "prsnl10/user/rtl.css" (influences "right-to-left"
-      languages like Hebrew). These files will be included automatically (as the
-      last ones for the relevant media, therefore you are able to overrule
-      existing styles). Do not forget to empty your browser's cache afterwards.
+      To apply additional CSS rules, create a
+        - "prsnl10/user/screen.css" file to influence the normal layout. You
+          can rename the "screen.css.dist" to "screen.css" as starting point.
+        - "prsnl10/user/print.css" file to influence the print layout. You
+          can rename the "print.css.dist" to "print.css" as starting point.
+        - "prsnl10/user/rtl.css" file to influences "right-to-left" languages
+          like Hebrew. You can rename the "rtl.css.dist" to "rtl.css" as
+          starting point.
+      The file(s) will be included automatically (as the last ones for the
+      relevant media, therefore you are able to overrule existing styles).
+      Note: Do not forget to empty your browser's cache if you cannot see any
+            effect.
 
     - Own JavaScript
-      To load additional JavaScript, edit "prsnl10/user/user.js". Do not
-      forget to empty your browser's cache afterwards.
+      To load additional JavaScript, create a "prsnl10/user/user.js" file. You
+      can rename the "user.js.dist" to "user.js" as starting point (it contains
+      some examples and useful comments how to define your own JavaScript).
       ATTENTION: You have to activate the template option "prsnl10_loaduserjs"
                  (->"Load 'prsnl10/user/user.js'?") in the DokuWiki Config
                  Manager!
@@ -75,17 +84,19 @@
     - Web analytics software (Piwik, Google Analytics etc.)
       Tools like Piwik and Google Analytics normally provide a small code
       snippet ("tag") which you have to include at your website to make
-      everything work. If you want to use such software with this template, have
-      a look at "prsnl10/user/tracker.php". This file exists to make it easier
-      for you. You don't have to deliberate where you have to copy and paste the
-      code, simply do it there.
+      everything work. If you want to use such software with this template,
+      create a "prsnl10/user/tracker.php.dist". You don't have to deliberate
+      where you have to copy and  paste the code, simply do it there. You can
+      rename the "tracker.php.dist" to "tracker.php" as a good starting point
+      (it contains some examples and useful comments how to define your own
+      boxes).
 
     - Own Apple Touch Icon
       If you want to replace the default Apple Touch Icon, simply create a
-      "apple-touch-icon.png" in "prsnl10/user". The template recognizes the
-      file automatically and will use it instead of the default one. Have a
-      look at Apple's developer database (cf. "Configuring Web Applications"[4])
-      if you need more information.
+      "apple-touch-icon.png" in "prsnl10/user". The template recognizes the file
+      automatically and will use it instead of the default one. Have a look at
+      Apple's developer database (cf. "Configuring Web Applications" [4]) if you
+      need more information.
 
     [1] <http://www.google.com/webfonts/family?family=Droid+Sans>
     [2] <http://j.mp/inYDGL>
