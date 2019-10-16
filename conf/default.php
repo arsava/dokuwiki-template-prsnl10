@@ -35,6 +35,7 @@ if (!defined("DOKU_INC")){
 //header navigation
 $conf["prsnl10_headernav"]          = 1; //1: use/show header navigation
 $conf["prsnl10_headernav_location"] = ":wiki:navigation_header"; //page/article used to store the header navigation
+$conf["prsnl10_searchform"]         = false; //FALSE: use/show search form
 
 //custom copyright notice
 $conf["prsnl10_copyright"]          = 1; //1: use/show copyright notice

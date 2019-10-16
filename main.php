@@ -174,6 +174,13 @@ if (tpl_getConf("prsnl10_loaduserjs") && file_exists(DOKU_TPLINC."user/user.js")
     </div>
     <!-- end header -->
 
+<?php
+if (tpl_getConf("prsnl10_searchform")) {
+        echo "<div id='tmpl_searchform'>";
+        tpl_searchform();
+        echo "</div>";
+}
+?>
 
     <!-- start main content area -->
     <div class="dokuwiki">
@@ -230,41 +237,43 @@ tpl_content(false);
                 <?php
                 if (!empty($loginname) ||
                     !tpl_getConf("prsnl10_hideadminlinksfromanon")){
-                    echo "[&#160;";
-                    tpl_actionlink("login"); //"login" handles both login/logout
+                    $tpl_actions=array();
+                    if (actionOK("login") && actionOK("logout")) {
+		        $tpl_actions[]="login"; //"login" handles both login/logout
+                    }
                     if (!empty($INFO["writable"])){ //$INFO comes from DokuWiki core
-                        echo "&#160;|&#160;";
-                        tpl_actionlink("edit"); //"edit" handles edit/create/show
+			$tpl_actions[]="edit";
                     }
                     if (!empty($INFO["exists"]) &&
                         actionOK("revisions")){ //check if action is disabled
-                        echo "&#160;|&#160;";
-                        tpl_actionlink("revisions");
+			$tpl_actions[]="revisions";
                     }
                     if (!empty($loginname) &&
                         $ACT === "show" &&
                         actionOK("subscribe")){ //check if action is disabled
-                        echo "&#160;|&#160;";
-                        tpl_actionlink("subscribe");
+			$tpl_actions[]="subscribe";
                     }
                     if ((!empty($INFO["writable"]) || //$INFO comes from DokuWiki core
                          !empty($INFO["isadmin"]) || //purpose of this template are "non-wiki" websites, therefore show this link only to users with write permission and admins
                          !empty($INFO["ismanager"])) &&
                         actionOK("media") && //check if action is disabled
                         function_exists("media_managerURL")) { //new media manager is available on DokuWiki releases newer than 2011-05-25a "Rincewind" / since 2011-11-10 "Angua" RC1
-                        echo "&#160;|&#160;";
-                        tpl_actionlink("media");
+			$tpl_actions[]="media";
                     }
                     if (!empty($INFO["isadmin"]) ||  //$INFO comes from DokuWiki core
                         !empty($INFO["ismanager"])){
-                        echo "&#160;|&#160;";
-                        tpl_actionlink("admin");
+			$tpl_actions[]="admin";
                     }
                     if (!empty($loginname) &&
                         actionOK("profile")){ //check if action is disabled
-                        echo "&#160;|&#160;";
-                        tpl_actionlink("profile");
+			$tpl_actions[]="profile";
                     }
+                    $f=1;
+                    echo "[&#160;";
+                    foreach($tpl_actions as $act) {
+                        if ($f==1) $f=0; else echo "&#160;|&#160;";
+                        tpl_actionlink($act);
+		    }
                     echo "&#160;]";
                 }else{
                     echo "&#160;";

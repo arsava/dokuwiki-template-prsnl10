@@ -33,6 +33,7 @@ if (!defined("DOKU_INC")){
 //header navigation
 $lang["prsnl10_headernav"]          = "Show header navigation?";
 $lang["prsnl10_headernav_location"] = "If yes, use following wiki page as header navigation:";
+$lang["prsnl10_searchform"]         = "Show search form?";
 
 //custom copyright notice
 $lang["prsnl10_copyright"]          = "Show copyright notice?";
